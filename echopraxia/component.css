@@ -1,13 +1,18 @@
-*,
+，
 *:after,
 *::before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+em {
+	font-family: "楷体",sans-serif;
+	font-style: normal;
 }
 
 body {
-	font-family: 'Merriweather', serif;
+	/* font-family: 'Merriweather', serif; */
+	font-family: "宋体","Arial",sans-serif;
 }
 
 nav a {
@@ -22,8 +27,9 @@ nav a {
 	letter-spacing: 4px;
 	font-weight: 500;
 	font-size: 1.25em;
-	font-family: 'Exo 2', sans-serif;
-	background: rgba(0,0,0,0.6);
+	/* font-family: 'Exo 2', sans-serif; */
+	font-family: "Microsoft YaHei","黑体","宋体","Arial",sans-serif;
+	background: rgba(0, 0, 0, 0.6);
 }
 
 nav a:hover,
@@ -35,14 +41,14 @@ nav a:focus {
 /* Effect 11: text fill based on Lea Verou's animation http://dabblet.com/gist/6046779 */
 .cl-effect-11 ul {
 	list-style: none;
-} 
+}
 
 .cl-effect-11 a {
 	padding: 10px 10px;
-	border-bottom: 2px solid rgba(255,255,255,0.2);
+	border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 	color: #fff;
 	text-shadow: none;
-} 
+}
 
 .cl-effect-11 a::before {
 	position: absolute;
@@ -63,5 +69,3 @@ nav a:focus {
 .cl-effect-11 a:focus::before {
 	max-width: 100%;
 }
-
-
