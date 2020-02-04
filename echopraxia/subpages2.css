@@ -1,0 +1,1205 @@
+﻿/* Modular Scale ---------------------- 20px @ 1:1.618	 102px @ 1:1.618	 ----------------------*/
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+	font-family: "Merriweather", "Georgia", serif;
+	background: #fff;
+	/* background: #fff url("echopraxia_main_bg3.jpg") 46% 0 no-repeat; */
+	background-size: cover;
+	color: #000;
+	font-weight: 400;
+	font-style: normal;
+	
+}
+
+@media only screen and (max-width: 1280px) {
+	body{
+		font-size: 0.8em;
+	}	
+}
+
+@media only screen and (min-width: 1600px) {
+	body{
+		font-size: 1.2em;
+	}	
+}
+
+
+.wrapper {
+	color: #000;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	background: #fff url("echopraxia_main_bg4_blur.jpg") 46% 0 no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	background-attachment:fixed;
+}
+
+.wrapper-context {
+	color: #000;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	background: #fff url("echopraxia_blue_blur.jpg") 46% 0 no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	background-attachment:fixed;
+}
+
+.blurbs {
+	background: #fff url("../img/echopraxia_main_bg6_blur.jpg") 46% 0 no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	background-attachment:fixed;
+}
+
+.crown-bg {
+	background: #000 url("sotala_bg.jpg") 46% 0 no-repeat;
+	background-size: 100%;
+}
+
+#crown-top {
+	display: block;
+	max-width: 100%;
+}
+
+#crown-top:after {
+	padding-top: 56.25%; // 16:9 ratio
+	    display: block;
+	    content: '';
+}
+
+#crown-top img {
+	display: block;
+	max-width: 59.303140361481%;
+	min-width: 59.303140361481%;
+	margin: 5em 0 0 4%;
+	position: relative;
+	z-index: 99;
+}
+
+.theseus {
+	background: #fff;
+}
+
+#theseus-top {
+	background: #000 url("theseus-construction.jpg") right 0 no-repeat;
+	background-size: cover;
+	color: #fff;
+}
+
+.crown-header {
+	width: 41.201799382733%;
+	position: absolute;
+	z-index: 2;
+	margin: 8em 0 0 47.358928571429%;
+}
+
+.hyphenate {
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+}
+
+#mil-zombies {
+	background: #fff url("milzomb-fire-ice.jpg") 46% 0 no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	background-attachment:fixed;
+}
+
+#milkyway {
+	background: #fff url("MilkyWay25.jpg") 46% 0 no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	background-attachment:fixed;
+}
+
+
+.top-menu {
+	width: 100%;
+	height: 3.5em;
+	margin: 0;
+	padding: 0;
+	background: rgba(15, 3, 3, 0.92);
+	border-bottom: solid 1px rgba(255,255,255,0.18);
+	-webkit-box-shadow: 0px 1px 0px 0px rgba(15, 3, 3, 0.5);
+	-moz-box-shadow:    0px 1px 0px 0px rgba(15, 3, 3, 0.5);
+	box-shadow:         0px 1px 0px 0px rgba(15, 3, 3, 0.5);
+}
+
+#logo {
+	font-family: 'Exo 2', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 16px;
+	font-weight: 500;
+	margin: 0.8em 3em;
+	display: inline-block;
+	font-size: 1.25em;
+	color: #fff;
+}
+
+.front-panel {
+	background: white;
+	overflow: hidden;
+	margin: 3em 4em 5em;
+	/* border: solid 2px #000; */
+	box-shadow: 0 0 0 1px rgba(0,0,70,0.12);
+	float: left;
+}
+
+.black-panel {
+	width: 59.967767525961%;
+	color: #fff;
+	background: rgba(0,0,0,0.6);
+	overflow: hidden;
+	margin: 3em auto 5em;
+	/* border: solid 2px #000; */
+	box-shadow: 0 0 0 1px rgba(0,0,70,0.12);
+	border-top: solid 4px #cb2c00;
+}
+
+.crown-bg .black-panel {
+	width: 41.201799382733%;
+	float: right;
+	margin: 0 11.368928571429% 0 3%;
+	padding: 3em 0;
+}
+
+.white-panel {
+	width: 100%;
+	margin: 5em auto;
+	background: #fff;
+}
+
+.container {
+	 width: 48.928571428571%;
+	 margin: 0 6.071428571429% 4em 0;
+     position: relative;
+     z-index: 1; /* needed for setting pseudo-element z-index */
+     backface-visibility: hidden;
+	 float: right;
+}
+
+.black-panel .container{
+	width: 81.372046598933%;
+	margin: 0 auto 4em;
+	float: none;
+}
+
+.crown-bg .black-panel .container{
+	width: 100%;
+	margin: 0;
+}
+
+#alliance {
+	width: 10%;
+	max-width: 100%;
+	display: block;
+	margin: 3em auto 0;
+}
+
+#alliance-credits {
+	font-size: 0.8em;
+	margin: 0.7em 0 0;
+}
+
+.bg-caption {
+	font-family: 'Exo 2', sans-serif;
+	font-size: 2.5em;
+	position: fixed;
+	font-style: italic;
+	font-weight: 600;
+}
+
+.caption-left {
+	color: #fff;
+	left: 1.4em;
+	bottom: 1em;
+	text-align: left;
+}
+
+.caption-right{
+	color: #fff;
+	right: 1.4em;
+	bottom: 1em;
+	text-align: right;
+}
+#enlist {
+	margin-top: 2em;
+	border-top: solid 1px #ffec53;
+	border-bottom: solid 1px #ffec53;
+	padding: 3em;
+}
+
+#enlist h1 {
+	margin-top: 0;
+}
+
+.centered-block {
+	width: 63.928571428571%;
+	margin: 0 auto;
+	float: none;
+}
+
+.wide-block {
+	width: 90%;
+	margin: 0 auto;
+	float: none;
+}
+
+p {
+	 font-size: 1.25em;
+	 line-height: 1.73em;
+	 margin-bottom: 10px;
+	 text-indent: 0em; /* 2em; */
+	 font-family: 'Merriweather', serif;
+	 font-weight: 400;
+	 font-style: normal;
+	 width: 100%;
+	 text-indent: 0em; /* 3em; */
+}
+
+.crown-bg p {
+	font-family: 'Exo 2', sans-serif;
+	text-indent: 0;
+	margin-bottom: 1em;
+	font-weight: 300;
+}
+
+#crown-top {
+	color: #fff;
+}
+
+.p-first {
+	text-indent: 0;
+}
+
+#text-initial {
+	display: block;
+	float: left;
+	font-size: 3em;
+	line-height: 1em;
+	margin: 0.12em 0.1em -0.2em 0;
+}
+
+#author-photo {
+	width: 30%;
+	/* margin: 0em auto 0; */
+	position: absolute;
+	top: 12.7em;
+	left: 0;
+	border-top: solid 0.2em #ff2507;
+	background: #000 url("../real/author-photo.jpg") right 0 no-repeat;
+	background-size: cover;
+	margin-right: 1em;
+}
+
+#author-photo img{
+	width: 100%;
+	max-width: 100%;
+	min-width: 100%;
+	opacity: 1;
+	transition: all 0.2s ease-in-out;
+}
+
+#author-photo img:hover{
+	opacity: 0;
+}
+
+.quote-author {
+	font-size: 0.74em;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 0.16em;
+}
+
+#james-nicoll {
+	font-style: normal;
+	font-size: 0.9rem;
+}
+
+#executive-summary {
+	font-size: 1.8em;
+}
+
+
+.author .text {
+	width: 60%;
+	margin: 2em 0 0 34%;
+	padding: 0.5em 0 4em;
+}
+ 
+.text a:link, .text a:visited {
+    outline: none;
+    color: #ff2507;
+    text-decoration: none;
+    white-space: nowrap;
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+	margin: 0;
+	padding: 0;
+	text-indent: 0;
+}
+
+.text a {
+	color: #e74c3c;
+	font-weight: 500;
+	-webkit-transition: -webkit-transform 0.2s;
+	transition: transform 0.2s;
+}
+
+.text a:hover,
+.text a:focus {
+	-webkit-transform: scale(0.666);
+	transform: scale(0.666);
+}
+
+.text a:active {
+	-webkit-transform: scale(0.666);
+	transform: scale(0.666);
+}
+
+.text a::before {
+	position: absolute;
+	top: -2px;
+	left: -7px;
+	box-sizing: content-box;
+	padding: 0 5px;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #ff2507;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+	transition: opacity 0.2s, transform 0.2s;
+	-webkit-transform: scale(0.8333);
+	transform: scale(0.8333);
+}
+
+.text a:hover::before,
+.text a:focus::before {
+	opacity: 1;
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+
+
+.container ol {
+	
+}
+
+#footnotes {
+	font-size: 1em;
+	line-height: 1.73em;
+	margin: 2em 0 5em;
+	padding: 1em 0;
+	border-top: solid .2em #ccc;
+}
+
+h1 {
+	 font-size: 10.8em;
+	 line-height: 1em;
+	 margin: 0;
+	 letter-spacing: -2px;
+	 font-family: 'Six Caps', sans-serif;
+	 font-weight: 500;
+	 font-style: normal;
+	 text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.35);
+}
+
+@media only screen and (max-width: 1620px) {
+	h1{
+		font-size: 10.8em;
+		line-height: 1em;
+		margin: 0;
+	}
+}
+
+@media only screen and (max-width: 1280px) {
+	h1{
+		font-size: 10.8em;
+		letter-spacing: 0;
+		line-height: 1em;
+		margin-bottom: 0.05em;
+	}
+}
+
+h1 strong {
+	color: #000;
+	font-weight: 500; 
+}
+
+.black-panel h1 {
+	color: #ffec53;
+	font-size: 2.8em;
+	line-height: 1em;
+	margin: 0;
+	letter-spacing: -2px;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.35);
+	text-align: center;
+	position: relative;
+	z-index: 5;
+	margin-top: 4em;
+}
+
+.black-panel h1 strong{
+	color: #cb2c00;
+	font-weight: 500;
+	font-family: 'Six Caps', sans-serif;
+	font-size: 7em;
+	position: relative;
+	z-index: -1;
+	top: -0.14em;
+	text-transform: uppercase;
+}
+
+.crown-header h1 {
+	font-size: 20.8em;
+	letter-spacing: 0.02em;
+	line-height: 0.85em;
+	margin-bottom: 0.05em;
+	color: #ffec53;
+}
+
+#theseus-logo {
+	font-size: 3em;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 700;
+	font-style: italic;
+	color: #fff;
+	padding: 2em 0 1em 3.3em;
+	background: url("theseus-logo.gif") 0.5em 1.5em no-repeat;
+	background-size: 2.5em;
+	letter-spacing: 0.01em;
+}
+
+h2 {
+	font-weight: 800;
+	float: right;
+	font-size: 2.435em;
+	width: 48.928571428571%;
+	margin: 0.4em 6.071428571429% 0 0;
+}
+
+h3 {
+	
+}
+
+h4 {
+	font-family: 'Exo 2', Helvetica, Arial, sans-serif;
+	font-size: 1.505em; 
+	margin: 0.3em 0 1em;
+	font-weight: 600;
+}
+.black-panel h4{
+	color: #ffec53;
+	margin: 1em 0 0.5em;
+}
+
+.crown-header h4 {
+	font-family: 'Exo 2', Helvetica, Arial, sans-serif;
+	font-size: 2em; 
+	margin: 0;
+	font-weight: 600;
+}
+
+.crown-header h4 em{
+	font-style: italic;
+}
+
+.theseus h4 {
+	font-size: 2.0em;
+	margin: 0.3em 0 0.3em;
+}
+
+.archive h4 {
+	float: left;
+	width: 100%;
+}
+
+h5 {
+	text-align: center;
+	display: table;
+	width: auto;
+	padding: 0 .5em 0 0;
+	position: relative;
+	font-size: 1.25em;
+	text-transform: uppercase;
+	letter-spacing: 0.38em;
+	z-index: 1;
+	margin: 2em 0 0.7em;
+}
+
+.blurbage {
+	color: black;
+	padding: 0em .5em 0 0;
+	display: table;
+	width: auto;
+	position: relative;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	letter-spacing: 0.38em;
+	z-index: 1;
+	margin: 2em 0em 0.7em;
+}
+
+
+h5 span {
+	background: #fff;
+    background: #fff;  
+    padding: 0 0.3em 0 0.5em;  
+    position: relative;  
+    z-index: 5;
+	font-weight: 500;
+}
+
+h5:before {
+  content: " ";
+  display: block;
+  height: .2em;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0.4em;
+  background: #ccc;
+  z-index: -1;
+}
+
+.enemy h5 {
+	text-align: center;
+	display: table;
+	width: auto;
+	padding: 0 .5em 0 0;
+	position: relative;
+	font-size: 1.25em;
+	text-transform: uppercase;
+	letter-spacing: 0.38em;
+	position: relative;
+	z-index: 1;
+	margin: 2em 0 0.7em;
+}
+
+.enemy h5 span {
+	background: #fff;
+    background: #fff;  
+    padding: 0 0.3em 0 0.5em;  
+    position: relative;  
+    z-index: 5;
+	font-weight: 500;
+}
+
+
+.classified {
+	color: #737373;
+}
+
+.centered {
+	width: 100%;
+	text-align: center;
+	float: none;
+}
+
+.centered h2 {
+	font-size: 2.735em;
+}
+
+.header {
+	width: 78%;
+	margin: 0 auto;
+}
+
+.header span {
+	font-size: 1.25em;
+	line-height: 1.7em;
+	margin: 1em auto;
+	display: block;
+}
+
+.blurbs .text {
+	width: 81.372046598933%;
+	margin: 0 auto;
+}
+
+.blurbs .text table {
+	width: 100%;
+	margin: 0;
+}
+
+.blurbs .text table tr{
+	border-bottom: dotted 1px #A6A6A6;
+}
+
+.blurbs .text table td{
+	width: 50%;
+	padding: 1.2em 1.4em;
+	vertical-align: top;
+	background: #F7F7F7;
+}
+
+.blurbs .text table td:first-child{
+	background: #fff;
+}
+
+.blurbs .text table td p{
+	text-indent: 0;
+}
+
+.blurbs .text table td div{
+	font-size: 1rem;
+	color: #A6A6A6;
+	padding: 0.9em 0 0 0;
+}
+
+.blurbs .text h1 {
+	display: inline-block;
+	float: left;
+}
+
+.blurbs .text h4 {
+	background: #000;
+	color: #fff;
+	padding: 0.3em 0.7em;
+	font-size: 2.45em;
+	margin: 3em 0 0 0;
+	float: left;
+	width: 100%;
+}
+
+.blurbs .text h4:first-child {
+	margin: 1em 0 0 0;
+}
+
+#blurb-header {
+	overflow: hidden;
+	padding-top: 3em;
+}
+
+#blurb-anchors {
+	list-style: none;
+	padding: 0;
+	font-size: 1.35em;
+	margin: 3em;
+	float: left;
+}
+
+#blurb-anchors li {
+	list-style: none;
+	padding: 1em;
+	margin: 0.2em;
+	display: inline-block;
+}
+
+.citation {
+		text-align: right;
+	}
+
+.top-scroll {
+	font-size: 1rem;
+	float: right;
+	margin: -2.3em 1.3em 0 0;
+	/* position: relative; */
+	/* right: 3em; */
+	display: block;
+	/* top: 7em; */
+}
+
+#author {
+	float: right;
+	width: 48.928571428571%;
+	margin-right: 6.071428571429%;
+	margin-bottom: 0;
+}
+
+#lead-block {
+	width: 73.091606%;
+	position: relative;
+	color: #000;
+	background: #ffec53;
+	text-align: right;
+	padding: 0.3em;
+	top: 8.45em;
+	left: -31.18417%;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 0.7em;
+}
+
+#theseus-top #lead-block {
+	width: 46.87%;
+	color: #000;
+	background: #ffec53;
+	text-align: left;
+	position: initial;
+	margin: 1em 0 0 0;
+	padding: 0.3em 0.2em 0.3em 6.01420302657%;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 1.4em;
+}
+
+.crown-bg .sidebar #lead-block {
+	position: initial;
+	width: 100%;
+	margin-top: 7.45em;
+}
+
+#theseus-caption {
+	font-family: 'Exo 2', Helvetica, Arial, sans-serif;
+	position: relative;
+	bottom: 2em;
+	right: -53%;
+	width: 48%;
+}
+
+#theseus-status {
+	width: 40.822078616425%;
+	margin: 0.3em 0 2em 6.01420302657%;
+	padding: 0.6em 1em 0.6em 0;
+	list-style: none;
+	font-family: 'Exo 2', Helvetica, Arial, sans-serif;
+	color: #ffec53;
+	line-height: 1.8em;
+	font-size: 1.2em;
+}
+
+#theseus-status tr {
+	border-bottom: dotted 1px #ffec53;
+}
+
+#theseus-top .text {
+	width: 40.822078616425%;
+	margin: 2em 0 2em 6.01420302657%;
+	padding-bottom: 2em;
+}
+
+#crown-data {
+	float: right;
+	display: block;
+	color: #ffec53;
+	text-align: left;
+	width: 12.5em;
+}
+
+#crown-model {
+	cursor: move;
+}
+
+#enemy-within-block {
+	display: inline-block;
+	width: auto;
+	color: #000;
+	background: #ffec53;
+	text-align: center;
+	padding: 0.3em;
+	/* top: 10.45em; */
+	/* left: -31.18417%; */
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 0.7em;
+	display: inline-block;
+	width: auto;
+	color: #000;
+	background: #ffec53;
+	text-align: center;
+	padding: 0.3em;
+	/* top: 10.45em; */
+	/* left: -31.18417%; */
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 1em;
+	margin: 3em auto 0.4em;
+}
+
+p.first {
+	 text-indent: 0px;
+	 font-size: 1.2em;
+	 line-height: 1.73em;
+	 width: 100%;
+}
+
+blockquote {
+	color: #ff2507;
+	font-family: 'Exo 2', Helvetica, Arial, sans-serif;
+	font-size: 2.623em;
+	line-height: 1.505em;
+	padding: 0;
+	margin: 1em 0;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.sidebar {
+	width: 35.893493068727%;
+	float: left;
+	margin: 0 0 4em 6.071428571429%;
+}
+
+.crown-bg .sidebar {
+	width: 42.88065271307%;
+	float: left;
+	margin: 0 0 4em;
+}
+
+.theseus-panel {
+	padding-bottom: 4em;
+	overflow: hidden;
+}
+
+.theseus-panel .sidebar {
+	width: 40.822078616425%;
+	margin: 2em 0 2em 6.01420302657%;
+}
+
+.theseus-panel .sidebar .side-image {
+	width: 45.888438085748%;
+	margin: 0;
+}
+
+.theseus-panel .sidebar .side-image:first-child {
+	margin-right: 8.000094905925%;
+}
+
+.theseus-panel .text{
+	width: 40.822078616425%;
+	margin: 2em 0 2em 6.01420302657%;
+	float: left;
+}
+
+.side-image img, .text-image img {
+	max-width: 100%;
+	min-width: 100%;
+}
+
+.side-image, .text-image {
+	background: #e8e8e8;
+	color: #000;
+	margin: 1em 0 2em;
+	float: left;
+	width: 100%;
+}
+
+.side-image p, .text-image p {
+	font-family: 'Exo 2', Helvetica, Arial, sans-serif;
+	padding: 0.4em 0.7em 1.6em;
+	text-indent: 0;
+}
+
+#theseus-path {
+	width: 87.971593946861%;
+	margin: 0 0 0 6.01420302657%;
+}
+
+#theseus-path img {
+	width: 74.908727380024%;
+	max-width: 74.908727380024%;
+	min-width: 74.908727380024%;
+	float: right;
+}
+
+#theseus-path .side-image p {
+	width: 25.133914620352%;
+	float: left;
+}
+
+.crown-bg .side-image, .crown-bg .text-image{
+	background: #111;
+	color: #fff;
+}
+
+.text-image {
+	width: 137.699607284111%;
+	margin-left: -18.849803642056%;
+}
+
+.side-data {
+	width: 100%; /* 31.958383297591% */
+	font-family: 'Exo 2', Helvetica, Arial, sans-serif;
+	font-size: 1.505em;
+	font-weight: 600;
+	float: right;
+	background: none;
+	margin: 2em 0 3em;
+	text-align: right;
+}
+
+.side-data:before, .side-data:after {
+	width: 100%; /* 31.958383297591% */
+	font-family: 'Exo 2', Helvetica, Arial, sans-serif;
+	font-size: 1.25em;
+	font-weight: 600;
+	float: right;
+	background: none;
+	margin: 2em 0 3em;
+	text-align: right;
+}
+
+.side-data strong {
+	display: block;
+	font-family: 'Six Caps', Oswald, Arial, sans-serif;
+	font-size: 10em;
+	font-weight: normal;
+	color: #ffec53;
+	line-height: 0.7em;
+	margin: 0.09em -0.06em 0.1em;
+	letter-spacing: 0.04em;
+}
+
+.bottom-menu {
+	width: 100%;
+	margin: 0 auto;
+	float: left;
+}
+
+.theseus .bottom-menu {
+	background: #fff url("echopraxia_main_bg4_blur.jpg") 46% 0 no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	background-attachment: fixed;
+}
+
+.menu {
+	width: 100%;
+	position: relative;
+	float: left;
+	margin-top: 0;
+	padding-bottom: 100px;
+}
+
+#selected {
+	position: relative;
+	display: inline-block;
+	margin: 1px 4px;
+	padding: 4px 10px 5px;
+	outline: none;
+	color: #000;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-weight: 500;
+	font-size: 1em;
+	font-family: 'Exo 2', sans-serif;
+	background: rgba(255,255,255,1);
+}
+
+#separator {
+	padding: 0em;
+	margin: 1.2em 24px;
+	width: 8em;
+	height: 3em;
+	background: repeating-linear-gradient( to right, rgba(255,255,255,0.7) 8px, rgba(255,255,255,0.7) 10px, rgba(255,255,255,0) 10px, rgba(255,255,255,0) 16px);
+}
+
+.footer {
+	width: 100%;
+	padding: 1em;
+	background: rgba(15, 3, 3, 0.78);
+	position: absolute;
+	bottom: 0;
+	color: #666;
+}
+
+.footer span {
+	color: #666;
+	float: right;
+}
+
+.footer span a {
+	color: #999;
+	text-decoration: none;
+}
+
+#top-image-papacy {
+	width: 10em;
+	display: block;
+	margin: 3em auto 0;
+}
+
+.archive {
+	float: left;
+	border-top: dotted 1px #555;
+	border-bottom: dotted 1px #555;
+	width: 87.971593946861%;
+	margin: 2.6em 0 1em 6.01420302657%;
+}
+
+#archive-firefall {
+	background: url("link-firefall.jpg") 50% 0 no-repeat;
+	background-size: cover;
+}
+
+#archive-burns-caulfield {
+	background: url("link-burns-caulfield.jpg") 50% 0 no-repeat;
+
+}
+
+#archive-theseus {
+	background: url("link-theseus.jpg") 50% 0 no-repeat;
+	background-size: cover;
+}
+
+#archive-crew {
+	background: url("link-crew.jpg") 50% 0 no-repeat;
+	background-size: cover;
+}
+
+#archive-vampires {
+	background: url("link-vampires.jpg") 50% 0 no-repeat;
+	background-size: cover;
+}
+
+.archive-links {
+	list-style: none;
+	width: 100%;
+	float: left;
+	padding: 0;
+	margin: 0 0 1.4em 0;
+}
+
+.archive-links li {
+	display: inline-block;
+	width: 19.180753224632%;
+	margin-left: 1.024003450757%;
+	height: 12em;
+	text-align: center;
+	padding: 0;
+	position: relative;
+	z-index: 2;
+}
+
+.archive-links a {
+	display: block;
+	line-height: 1.2em;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	vertical-align: middle;
+	font-family: 'Exo 2', Helvetica, Arial, sans-serif;
+	font-size: 1.7em;
+	font-weight: 700;
+	text-decoration: none;
+	color: #fff;
+	padding-top: 3em;
+	overflow: hidden;
+}
+
+.archive-links a span{
+	display: block;
+	padding: 0;
+	position: relative;
+	z-index: 5;
+}
+
+.archive-link-button::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+	position: absolute;
+	z-index: 4;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+.archive-link-button:hover:after {
+	background: rgba(0,0,0,0.1);
+}
+
+.archive-links li:first-child {
+	margin-left: 0;
+}
+
+
+
+
+/* ------------------- MENU ANIMATION COMPONENT ––––––––––––––––––––––––––– */
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+nav a {
+	position: relative;
+	display: inline-block;
+	margin: 1px 4px;
+	padding: 0 10px;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-weight: 500;
+	font-size: 1em;
+	font-family: 'Exo 2', sans-serif;
+	background: rgba(15, 3, 3, 0.78);
+}
+
+@media only screen and (max-width: 1280px) {
+	nav a{
+		margin: 8px 15px;
+	}	
+}
+
+
+
+nav a:hover,
+nav a:focus {
+	outline: none;
+}
+
+
+/* Effect 11: text fill based on Lea Verou's animation http://dabblet.com/gist/6046779 */
+.cl-effect-11 ul {
+	list-style: none;
+} 
+
+.cl-effect-11 ul li {
+	display: inline-block;
+} 
+	
+
+.cl-effect-11 a {
+	padding: 4px 9px;
+	border-bottom: 2px solid rgba(255,255,255,0.2);
+	color: rgba(255,255,255,0.8);
+	text-shadow: none;
+} 
+
+.cl-effect-11 a::before {
+	position: absolute;
+	top: 0;
+	left: 9px;
+	overflow: hidden;
+	padding: 4px 0px;
+	max-width: 0;
+	border-bottom: 2px solid #fff;
+	color: #FFFFFF;
+	content: attr(data-hover);
+	-webkit-transition: max-width 0.3s;
+	-moz-transition: max-width 0.3s;
+	transition: max-width 0.3s;
+}
+
+.cl-effect-11 a:hover::before,
+.cl-effect-11 a:focus::before {
+	max-width: 100%;
+}
+
+
+

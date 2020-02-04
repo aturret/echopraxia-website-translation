@@ -1,0 +1,72 @@
+.navbarhead {
+	PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #0000ff; FONT-FAMILY: Verdana, arial, helvetica, Univers, 'Zurich BT', sans-serif; TEXT-DECORATION: none
+}
+A.navbar:link {
+	PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: rgb(255,255,255); FONT-FAMILY: Verdana, arial, helvetica, Univers, 'Zurich BT', sans-serif; TEXT-DECORATION: none
+}
+A.navbar:visited {
+	PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: rgb(255,255,255); FONT-FAMILY: Verdana, arial, helvetica, Univers, 'Zurich BT', sans-serif; TEXT-DECORATION: none
+}
+A.navbar:hover {
+	PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: rgb(51,255,255); FONT-FAMILY: Verdana, arial, helvetica, Univers, 'Zurich BT', sans-serif; TEXT-DECORATION: underline
+}
+A.headline:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: navy; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.headline:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: navy; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.headline:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: maroon; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+A.fullStory:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 9px; COLOR: navy; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.fullStory:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 8px; COLOR: navy; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.fullStory:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 8px; COLOR: maroon; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+A.terms:link {
+	FONT-SIZE: 10px; COLOR: #0000ff; FONT-FAMILY: Verdana, arial, helvetica, Univers, 'Zurich BT', sans-serif; TEXT-DECORATION: underline
+}
+A.terms:visited {
+	FONT-SIZE: 10px; COLOR: #0000ff; FONT-FAMILY: Verdana, arial, helvetica, Univers, 'Zurich BT', sans-serif; TEXT-DECORATION: underline
+}
+A.terms:hover {
+	FONT-SIZE: 10px; COLOR: #0000ff; FONT-FAMILY: Verdana, arial, helvetica, Univers, 'Zurich BT', sans-serif; TEXT-DECORATION: underline
+}
+.abstract {
+	FONT-SIZE: 8pt; COLOR: navy; FONT-FAMILY: arial, helvetica, sans-serif
+}
+A.breakheadline:link {
+	FONT-SIZE: 8pt; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+A.breakheadline:visited {
+	FONT-SIZE: 8pt; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+A.breakheadline:hover {
+	FONT-SIZE: 8pt; COLOR: rgb(255,255,30); FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.breakabstract {
+	FONT-SIZE: 8pt; COLOR: #ffffff; FONT-FAMILY: arial, helvetica, sans-serif
+}
+.copyright {
+	FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.pollheadline {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: maroon; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.pollbody {
+	FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.date {
+	FONT-SIZE: 8pt; COLOR: #ffffff; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+.frontSection {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.headline_video {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}

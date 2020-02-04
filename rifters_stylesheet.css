@@ -1,0 +1,55 @@
+@charset "iso-8859-1";
+
+ 
+H1 {color:#FFFFCC; font-family: Arial, helvetica; font-size:14pt; font-weight:bold; background:transparent; text-align:center}
+
+H2 {color:#FFFFFF; font-family: Arial, helvetica; font-size:10pt; font-weight:bold; background:transparent;}
+
+H3{font-family: Arial; font-size: 9pt; color:#FFFFFF; font-weight:bold; text-decoration:underline;}
+
+P {position:relative; text-align:justify; color:#FFFFCC; font-family: Arial, helvetica; font-size: 10pt; background:transparent; font-weight:normal; margin-left:0px; margin-right:2%}
+
+.subhd {color:#FFFFff; font-family: Arial, helvetica; font-weight:bold; font-size: 10pt; text-align:right}
+.splash {text-align:right; margin-right:2%; margin-left:180px;}
+.btitle { COLOR:#FFFFFF; font-style:italic}
+
+P.excerpt {font-family: times new roman; font-size: 11pt ; color:#000000}
+P.def {text-align:center; color:#6699FF; font-size:9pt} /*null for rifters diagram*/
+P.cap {text-align:center; font-size:9pt} /*Caption for rifters diagram*/
+P.date {text-align:left; color:#ffffff; font-size:9pt; font-weight:bold}
+P.crawl {text-align:justify; color:#000000; font-size:9pt; font-weight:normal}
+
+div.Menu {position:fixed; left:2px; top:2px; z-index:+1}
+div.newscrawl {position:fixed; left:2px; top:200px}
+div.content{height: 100%;overflow: auto; margin-left:130px} <!-- Wrap this around all non-menu elements -->
+div.blurbcon{height: 90%;overflow: auto; margin-left:130px; margin-bottom:0px}
+div.citation{font-family: Arial, helvetica; text-align:right; color:#ffffff; font-size:10pt}
+div.rifter {position:absolute; left:270px; top:230px; right:5%; height:500px; width:360px; overflow:auto; 
+
+
+
+text-align:justify; color:#FFFFCC; font-family: Arial, helvetica; font-size: 10pt; background:transparent; font-weight:normal;}
+
+
+
+body {font-family: Arial,helvetica; font-size: 10pt; background-color:#000000;text-align:justify; overflow-y: hidden; margin:0; padding: 0px}
+
+body.mael {font-family: Arial,helvetica; font-size: 10pt; background-color:#000000;text-align:justify; overflow-y: auto; margin:0; padding: 0px}
+
+
+a.most:link {color: #66ffff}
+a.most:visited {color: #0099ff}
+a.most:hover {color: #ffffff}
+
+a.top:link {color: #0033ff; font-size:8pt; text-decoration:none; text-align:right}
+a.top:visited {color: #0033ff; font-size:8pt; text-decoration:none; text-align:right}
+a.top:hover {color: #0033ff; font-size:8pt; text-decoration:none; text-align:right}
+
+
+a.sub:link {font-family: Arial, helvetica; color: #ffff00; font-size:8pt; text-decoration:none; text-align:center;}
+a.sub:visited {font-family: Arial, helvetica; color: #ffff00; font-size:8pt; text-decoration:none; text-align:center;}
+a.sub:hover {font-family: Arial, helvetica; color: #ffffff; font-size:8pt; text-decoration:none; text-align:center;}
+
+a.bak:link {font-family: Arial, helvetica; color: #000000; font-size:8pt; text-decoration:none; text-align:center;}
+a.bak:visited {font-family: Arial, helvetica; color: #000000; font-size:8pt; text-decoration:none; text-align:center;}
+a.bak:hover {font-family: Arial, helvetica; color: #ffffff; font-size:8pt; text-decoration:none; text-align:center;}

@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html class=" js csstransforms3d" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Attic</title>
+		<meta name="description" content="A webpage for new Peter Watts' novel.">
+		<meta name="keywords" content="science fiction, echopraxia, blindsight, peter watts">
+		<meta name="author" content="Codrops">
+		<link rel="shortcut icon" href="http://mataba.pl/projekty/echopraxia/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="echopraxia\normalize.css">
+		<link rel="stylesheet" type="text/css" href="attic.css">
+		<link rel="stylesheet" type="text/css" href="echopraxia\component.css">
+		<script src="echopraxia\modernizr.js"></script>
+		<link href="echopraxia\css.css" rel="stylesheet" type="text/css">
+	
+<script type="text/JavaScript">
+
+//Preload Images function:
+
+function PreLoad()
+{
+		var menu_pics=new Array('run-on.gif','run-off.gif', 
+					'proceed-on.gif', 'proceed-off.gif');
+
+	preLoadBios(menu_pics);
+}
+
+function preLoadBios(the_images_array)
+{
+	for(loop = 0; loop < the_images_array.length; loop++)
+	{	
+   		var an_image = new Image();
+		an_image.src = the_images_array[loop];
+	}
+}
+
+
+
+/*Load bios into table */
+function LoadBio(txt,hdr)
+{
+var x=document.getElementById('profile')
+var y=document.getElementById('header')
+x.innerHTML=txt
+y.innerHTML=hdr
+}
+
+
+//-->
+
+
+
+</script>
+
+</head>
+	<body>
+
+		<div class="attainer">
+			      <div class="text">
+				<br>
+			        <h1>&nbsp;Enter&nbspAt&nbsp;Your&nbsp;Own&nbsp;Risk.</h1> 
+			      </div>
+			
+		</div><!-- /attainer -->
+
+<div class="atticbar">
+<p style="font-size: 1.4em;"><span id="text-initial">Y</span>ou are about to enter the Catacombs: a dusty boneyard of deprecated java applets, 
+broken links, and html 1.0 upon which this site was first built, back in 
+the dying days of the last century. If you're a rifters completist you could 
+find stuff of interest here: text and illustrations
+to enhance the Lenie Clarke experience, much as the newer wings set the stage for 
+<i>Blindsight</i> and <i>Echopraxia</i>. But none of it has been updated in years— and that which 
+isn't outright broken is, at best, quaint.
+<br><br>
+You have been warned.</p>
+</div>
+
+<div class="atticnav">
+<table border="0" align="right" cellpadding="4" cellspacing="0"><tr>
+<td valign="middle">
+<a href="old-index.htm" onmouseover="proceed.src='proceed-on.png'; return true" onmouseout="proceed.src='proceed-off.png'; return true">
+   <img src="proceed-off.png" name="proceed" border="0" alt=""></a>
+</td>
+<td valign="middle">
+<a href="index-1.htm" onmouseover="run.src='run-on.png'; return true" onmouseout="run.src='run-off.png'; return true">
+   <img src="run-off.png" name="run" border="0" alt=""></a>
+</td></tr></table>
+</div>
+
+		
+	
+</body></html>

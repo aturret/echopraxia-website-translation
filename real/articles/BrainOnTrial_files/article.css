@@ -1,0 +1,21 @@
+.byline {
+	FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: Verdana, Arial
+}
+.copyright {
+	FONT-SIZE: 9px; COLOR: #3f3d3d; FONT-FAMILY: Verdana, Arial; TEXT-DECORATION: none
+}
+.creditline {
+	FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: Verdana, Arial
+}
+.date {
+	FONT-SIZE: 8pt; COLOR: #ffffff; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+.articlebody {
+	FONT-SIZE: 10pt; COLOR: #000000; FONT-FAMILY: verdana, Arial
+}
+.printerfriendly {
+	FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: verdana, arial, helvetica, sans-serif; TEXT-DECORATION: none
+}
+.storyheadline {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #cc0000; FONT-FAMILY: verdana, arial, helvetica, san-serif
+}
