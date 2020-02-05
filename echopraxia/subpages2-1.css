@@ -213,7 +213,7 @@ body {
 	font-family: 'Exo 2', sans-serif;
 	font-size: 2.5em;
 	position: fixed;
-	font-style: italic;
+	font-style: normal;
 	font-weight: 600;
 }
 
@@ -238,6 +238,7 @@ body {
 }
 
 #enlist h1 {
+	/* font-style: 5em; */
 	margin-top: 0;
 }
 
