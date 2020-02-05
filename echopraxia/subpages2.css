@@ -6,7 +6,8 @@ html {
 }
 
 body {
-	font-family: "Merriweather", "Georgia", serif;
+	/* font-family: "Merriweather", "Georgia", serif; */
+	font-family: "黑体", serif;
 	background: #fff;
 	/* background: #fff url("echopraxia_main_bg3.jpg") 46% 0 no-repeat; */
 	background-size: cover;
@@ -134,7 +135,8 @@ body {
 }
 
 #logo {
-	font-family: 'Exo 2', sans-serif;
+	/* font-family: 'Exo 2', sans-serif; */
+	font-family: Arial, Helvetica, sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 16px;
 	font-weight: 500;
@@ -210,7 +212,8 @@ body {
 }
 
 .bg-caption {
-	font-family: 'Exo 2', sans-serif;
+	/* font-family: 'Exo 2', sans-serif; */
+	font-family: '宋体', sans-serif;
 	font-size: 2.5em;
 	position: fixed;
 	font-style: italic;
@@ -254,11 +257,12 @@ body {
 }
 
 p {
-	 font-size: 1.25em;
-	 line-height: 1.73em;
+	 font-size: 1.35em;
+	 line-height: 1.8em;
 	 margin-bottom: 10px;
 	 text-indent: 0em; /* 2em; */
-	 font-family: 'Merriweather', serif;
+	 /* font-family: 'Merriweather', serif; */
+	font-family: '宋体', sans-serif;
 	 font-weight: 400;
 	 font-style: normal;
 	 width: 100%;
@@ -266,7 +270,8 @@ p {
 }
 
 .crown-bg p {
-	font-family: 'Exo 2', sans-serif;
+	/* font-family: 'Exo 2', sans-serif; */
+	font-family: '宋体', sans-serif;
 	text-indent: 0;
 	margin-bottom: 1em;
 	font-weight: 300;
@@ -409,7 +414,8 @@ h1 {
 	 line-height: 1em;
 	 margin: 0;
 	 letter-spacing: -2px;
-	 font-family: 'Six Caps', sans-serif;
+	 /* font-family: 'Six Caps', sans-serif; */
+	font-family: '宋体', sans-serif;
 	 font-weight: 500;
 	 font-style: normal;
 	 text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.35);
@@ -443,7 +449,8 @@ h1 strong {
 	line-height: 1em;
 	margin: 0;
 	letter-spacing: -2px;
-	font-family: 'Exo 2', sans-serif;
+	/* font-family: 'Exo 2', sans-serif; */
+	font-family: '宋体', sans-serif;
 	font-weight: 600;
 	font-style: normal;
 	text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.35);
@@ -456,7 +463,8 @@ h1 strong {
 .black-panel h1 strong{
 	color: #cb2c00;
 	font-weight: 500;
-	font-family: 'Six Caps', sans-serif;
+	/* font-family: 'Six Caps', sans-serif; */
+		font-family: '宋体', sans-serif;
 	font-size: 7em;
 	position: relative;
 	z-index: -1;
@@ -474,8 +482,9 @@ h1 strong {
 
 #theseus-logo {
 	font-size: 3em;
-	font-family: 'Exo 2', sans-serif;
-	font-weight: 700;
+	/* font-family: 'Exo 2', sans-serif; */
+	font-family: '宋体', sans-serif;
+		font-weight: 700;
 	font-style: italic;
 	color: #fff;
 	padding: 2em 0 1em 3.3em;
@@ -497,7 +506,8 @@ h3 {
 }
 
 h4 {
-	font-family: 'Exo 2', Helvetica, Arial, sans-serif;
+	/* font-family: 'Exo 2', Helvetica, Arial, sans-serif; */
+	font-family: Helvetica, sans-serif;
 	font-size: 1.505em; 
 	margin: 0.3em 0 1em;
 	font-weight: 600;
@@ -508,14 +518,16 @@ h4 {
 }
 
 .crown-header h4 {
-	font-family: 'Exo 2', Helvetica, Arial, sans-serif;
+	/* font-family: 'Exo 2', Helvetica, Arial, sans-serif; */
+	font-family: '宋体', sans-serif;
 	font-size: 2em; 
 	margin: 0;
 	font-weight: 600;
 }
 
 .crown-header h4 em{
-	font-style: italic;
+    font-style: normal;
+	font-family: '楷体', sans-serif;
 }
 
 .theseus h4 {
@@ -890,7 +902,8 @@ blockquote {
 }
 
 .side-image p, .text-image p {
-	font-family: 'Exo 2', Helvetica, Arial, sans-serif;
+	/* font-family: 'Exo 2', Helvetica, Arial, sans-serif; */
+	font-family: '黑体', sans-serif;
 	padding: 0.4em 0.7em 1.6em;
 	text-indent: 0;
 }
@@ -988,7 +1001,8 @@ blockquote {
 	letter-spacing: 4px;
 	font-weight: 500;
 	font-size: 1em;
-	font-family: 'Exo 2', sans-serif;
+	/* font-family: 'Exo 2', sans-serif; */
+	font-family: 'Microsoft Yahei', sans-serif;
 	background: rgba(255,255,255,1);
 }
 
@@ -1146,7 +1160,8 @@ nav a {
 	letter-spacing: 4px;
 	font-weight: 500;
 	font-size: 1em;
-	font-family: 'Exo 2', sans-serif;
+	/* font-family: 'Exo 2', sans-serif; */
+	font-family: 'Microsoft Yahei', sans-serif;
 	background: rgba(15, 3, 3, 0.78);
 }
 
