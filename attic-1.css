@@ -288,7 +288,8 @@ div.basic {
 	letter-spacing: 4px;
 	font-weight: 500;
 	font-size: 1.25em;
-	font-family: 'Exo 2', sans-serif;
+	/* font-family: 'Exo 2', sans-serif; */
+	font-family: 黑体,sans-serif;
 	background: rgba(255,255,255,1);
 }
 
