@@ -484,9 +484,9 @@ h1 strong {
 #theseus-logo {
 	font-size: 3em;
 	/* font-family: 'Exo 2', sans-serif; */
-	font-family: '宋体', sans-serif;
+	font-family: '黑体', sans-serif;
 		font-weight: 700;
-	font-style: italic;
+	font-style: normal;
 	color: #fff;
 	padding: 2em 0 1em 3.3em;
 	background: url("theseus-logo.gif") 0.5em 1.5em no-repeat;
@@ -529,6 +529,11 @@ h4 {
 .crown-header h4 em{
     font-style: normal;
 	font-family: '楷体', sans-serif;
+}
+
+.clearfix em{
+	font-family: "楷体",sans-serif;
+	font-style: normal;
 }
 
 .theseus h4 {

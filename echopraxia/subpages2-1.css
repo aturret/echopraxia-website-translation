@@ -475,9 +475,10 @@ h1 strong {
 
 #theseus-logo {
 	font-size: 3em;
-	font-family: 'Exo 2', sans-serif;
+	/* font-family: 'Exo 2', sans-serif; */
+	font-family: '黑体', sans-serif;
 	font-weight: 700;
-	font-style: italic;
+	font-style: normal;
 	color: #fff;
 	padding: 2em 0 1em 3.3em;
 	background: url("theseus-logo-1.gif") 0.5em 1.5em no-repeat;
