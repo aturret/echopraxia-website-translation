@@ -11,18 +11,7 @@
 	font-weight: normal;
 	font-style: normal;
 }
-@font-face {
-	font-family: 'HYXiZhongYuanJ';
-	src:url('../fonts/HYXiZhongYuanJ.ttf') ;
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'HYChangMeiHeiJ';
-	src:url('../fonts/HYChangMeiHeiJ.ttf') ;
-	font-weight: normal;
-	font-style: normal;
-}
+
 
 html {
 	position: relative;
