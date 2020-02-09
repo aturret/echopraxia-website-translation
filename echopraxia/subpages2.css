@@ -319,10 +319,10 @@ p {
 }
 
 .quote-author {
-	font-size: 0.74em;
+	font-size: 1em;
 	text-transform: uppercase;
 	font-weight: 600;
-	letter-spacing: 0.16em;
+	letter-spacing: 0.1em;
 }
 
 #james-nicoll {
@@ -1113,6 +1113,10 @@ blockquote {
 	padding-top: 3em;
 	overflow: hidden;
 }
+.about-author{
+	font-size: 5em;
+	font-family: '黑体',sans-serif;
+}
 
 .archive-links a span{
 	display: block;
@@ -1142,8 +1146,6 @@ blockquote {
 .archive-links li:first-child {
 	margin-left: 0;
 }
-
-
 
 
 /* ------------------- MENU ANIMATION COMPONENT ––––––––––––––––––––––––––– */

@@ -506,13 +506,13 @@ h4 {
 
 blockquote {
 	color: #ff2507;
-	font-family: 'Exo 2', Helvetica, Arial, sans-serif;
+	font-family:Helvetica, Arial, sans-serif;
 	font-size: 2.623em;
 	line-height: 1.505em;
 	padding: 0;
 	margin: 1em 0;
 	font-weight: 300;
-	font-style: italic;
+	font-style: normal;
 }
 
 .sidebar {
