@@ -1,0 +1,178 @@
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Peter Watts">
+   <meta name="GENERATOR" content="Mozilla/4.04 [en] (Win95; I) [Netscape]">
+   <meta name="keywords" content="Blindsight, Peter Watts, first contact, aliens, science fiction, sf, Tor">
+   <meta name="description" content="Teaser for the Tor novel Blindsight, by Peter Watts">
+   <title>Rifters.com:  Blindsight</title>
+
+<link rel="stylesheet" href="..\BS_stylesheet.css" type="text/css">
+
+<div id="blot" class="movable"><img src="blot-1.png"></div>
+<div id="b1" class="bolt"><img src="bolt1-1.jpg"></div>
+<div id="b2" class="bolt"><img src="bolt2-1.jpg"></div>
+<div id="b3" class="bolt"><img src="bolt3-1.jpg"></div>
+<div id="b4" class="bolt"><img src="bolt4-1.jpg"></div>
+<div id="ben" class="backdrop"><img src="bsbackground-1.jpg"></div>
+<style type-"type/css"="">
+<!--
+  body {
+    background-image: url(bsbackground-1.jpg);
+	background-repeat : no-repeat;
+	background-color: #000000;
+	background-attachment: scroll;
+  }
+  
+-->
+</style>
+
+<script type="text/JavaScript">
+
+<!--
+//Preload Images function:
+
+function PreLoad()
+{
+		var menu_pics=new Array('intro_on.gif','bc_on.gif','autopsy_on.gif','crew_on.gif', 'firefall_on.gif', 'root_on.gif',
+		 'theseus_on.gif.', 'vampires_on.gif');
+
+	preloadImages(menu_pics);
+}
+
+function preloadImages(the_images_array) {
+{
+	for(loop = 0; loop < the_images_array.length; loop++)
+	{	
+   		var an_image = new Image();
+		an_image.src = the_images_array[loop];
+	}
+}
+
+}
+
+//-->
+<!--
+
+var x = 600; //Starting Location - left
+var y = 600; //Starting Location - top
+var dest_x = 0;  //Ending Location - left
+var dest_y = 0;  //Ending Location - top
+var y_interval = -1; //Move x-px every initialization
+var x_interval = -1;
+
+//set up Big Ben
+// 	document.getElementById("ben").style.top  = 0;
+// 	document.getElementById("ben").style.left  = 0;
+
+//set up lightning bolts
+ 	document.getElementById("b4").style.top  = 550;
+	document.getElementById("b4").style.left = 700;
+ 	document.getElementById("b3").style.top  = 300;
+	document.getElementById("b3").style.left = 600;
+ 	document.getElementById("b2").style.top  = 10;
+	document.getElementById("b2").style.left = 600;
+ 	document.getElementById("b1").style.top  = 550;
+	document.getElementById("b1").style.left = 300;
+
+
+
+function Crawl() {
+	//Keep on moving the image till the target is achieved
+	if(x>dest_x) x = x + x_interval; 
+	if(y>dest_y) y = y + y_interval;
+	
+	//Move the image to the new location
+ 	document.getElementById("blot").style.top  = y+'px';
+	document.getElementById("blot").style.left = x+'px';
+
+	if ((x+x_interval > dest_x) && (y+y_interval > dest_y)) {
+		//Keep on calling this function every x microseconds 
+		//	till the target location is reached
+		window.setTimeout('Crawl()',40);
+	}
+	//flash lightning
+	if (y==10) document.getElementById("b3").style.visibility  = 'visible';
+	if (y==8) document.getElementById("b3").style.visibility  = 'hidden';
+	if (x==300) document.getElementById("b4").style.visibility  = 'visible';
+	if (x==298) document.getElementById("b4").style.visibility  = 'hidden';
+	
+	if (y==35) document.getElementById("b1").style.visibility  = 'visible';
+	if (y==33) document.getElementById("b1").style.visibility  = 'hidden';
+	if (y==31) document.getElementById("b2").style.visibility  = 'visible';
+	if (y==29) document.getElementById("b2").style.visibility  = 'hidden';
+	
+	
+}
+//-->
+
+</script>
+
+</head>
+<body scroll="no" text="#FFFFCC" align="left" bgcolor="#000000" onload="PreLoad();Crawl()">
+<bgproperties(fixed)>
+<div style="position:absolute; left:12px; top:12px; z-index:5;">
+
+<table align="left" border="0" cellspacing="0" cellpadding="0">
+<tr height="20">
+<td valign="BOTTOM">
+<a href="..\index-1.htm" onmouseover="root.src='root_on.gif'; return true" onmouseout="root.src='root_off.gif'; return true">
+   <img src="root_off.gif" name="root" border="0" alt="Front Door"></a>
+</td>
+<td valign="BOTTOM">
+<a href="firefall.htm" onmouseover="firefall.src='firefall_on.gif'; return true" onmouseout="firefall.src='firefall_off.gif'; return true">
+    <img src="firefall_off.gif" name="firefall" border="0" alt="Firefall"></a>
+</td><td valign="BOTTOM">
+<a href="theseus-1.htm" onmouseover="theseus.src='theseus_on.gif'; return true" onmouseout="theseus.src='theseus_off.gif'; return true">
+    <img src="theseus_off.gif" name="theseus" border="0" alt="Theseus"></a>
+</td>
+</tr><tr valign="TOP">
+<td valign="BOTTOM">
+<a href="crew-1.htm" onmouseover="crew.src='crew_on.gif'; return true" onmouseout="crew.src='crew_off.gif'; return true">
+    <img src="crew_off.gif" name="crew" border="0" alt="crew"></a>
+</td>
+
+<td valign="TOP" align="center">
+<a href="vampires-1.htm" onmouseover="vampires.src='vampires_on.gif'; return true" onmouseout="vampires.src='vampires_off.gif'; return true">
+    <img src="vampires_off.gif" name="vampires" border="0" alt="vampires"></a>
+</td><td valign="TOP" align="center">
+<a href="caulfield.htm" onmouseover="bc.src='bc_on.gif'; return true" onmouseout="bc.src='bc_off.gif'; return true">
+    <img src="bc_off.gif" name="bc" border="0" alt="Burns-Caulfield"></a>
+</td>
+</tr></table>
+
+<h1><br><br>Who do you send to meet the alien<br>
+when the alien doesn't want to meet?</h1>
+
+<p style="margin-left:20px">You send a linguist with multiple personalities carved surgically into her brain. You send<br>
+a biologist so radically interfaced with machinery that he sees x-rays and tastes ultra-<br>
+sound, so compromised by grafts and splices he no longer feels his own flesh. You<br>
+send a pacifist warrior whose career-defining moment was an act of treason. You<br>
+send a monster to command them all, an extinct hominid predator once called<br>
+<i>vampire</i>, recalled from the grave with the voodoo of recombinant genetics<br>
+and the blood of sociopaths.  And you send a <i>synthesist</i> — an<br>
+informational topologist with half his mind gone — as an<br>
+interface between <i>here</i> and <i>there</i>, a conduit through<br>
+which the Dead Center might hope to understand<br>
+the Bleeding Edge.
+<br><br>
+You send them all to the edge of interstellar space, praying you<br>
+can trust such freaks and retrofits with the fate of a world.<br>
+You fear they may be more alien than the thing they've<br>
+been sent to find.
+<br><br>
+But you'd give anything for that to be true, if you<br>
+only knew what was waiting for them... 
+</p>
+
+</div>
+
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1714026-1";
+urchinTracker();
+</script>
+</bgproperties(fixed)></body>
+</html>

@@ -1,0 +1,237 @@
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Peter Watts">
+   <meta name="GENERATOR" content="Mozilla/4.04 [en] (Win95; I) [Netscape]">
+   <meta name="keywords" content="Blindsight, Peter Watts, first contact, aliens, science fiction, sf, Tor">
+   <meta name="description" content="Theseus: Technical Overview">
+   <title>Blindsight: Theseus</title>
+
+<link rel="stylesheet" href="..\BS_stylesheet.css" type="text/css">
+<style type="text/css">
+<!--
+a.most:link {color: #66ffff}
+a.most:visited {color: #0099ff}
+a.most:hover {color: #ffffff}
+-->
+</style>
+
+<script type="text/JavaScript">
+
+
+
+<!--
+//Preload Images function:
+
+function PreLoad()
+{
+		var menu_pics=new Array('intro_on.gif','bc_on.gif','autopsy_on.gif','crew_on.gif','bigben_on.gif', 'firefall_on.gif', 'root_on.gif',
+		'rorshach_on.gif', 'theseus_on.gif.', 'vampires_on.gif', 'slices/theseus-on_02.jpg', 'slices/theseus-on_03.jpg', 'slices/theseus-on_04.jpg', 'slices/theseus-on_05.jpg', 'slices/theseus-on_06.jpg', 'slices/theseus-on_07.jpg', 'slices/theseus-on_08.jpg', 'slices/theseus-on_09.jpg', 'slices/theseus-on_10.jpg', 'slices/theseus-on_11.jpg', 'slices/theseus-on_12.jpg', 'slices/theseus-on_13.jpg', 'slices/theseus-on_14.jpg', 'slices/theseus-on_15.jpg');
+
+	preloadImages(menu_pics);
+}
+
+function preloadImages(the_images_array) {
+{
+	for(loop = 0; loop < the_images_array.length; loop++)
+	{	
+   		var an_image = new Image();
+		an_image.src = the_images_array[loop];
+	}
+}
+
+}
+
+//-->
+
+/*Changes the legend conetnts in the first cell of rifters diagram table */
+function ChangeLabel(title,desc,y)
+{
+
+var x=document.getElementById('subtitle')
+
+if (title!='null')
+{x.innerHTML='<SPAN style="position:absolute; margin-left:48; width:200; margin-top:'+y+'"><SPAN style="font-size:11pt">'+title+'</SPAN><BR><BR>'+desc+'</SPAN></DIV>'}
+
+else
+
+{x.innerHTML='<SPAN style="position:absolute; margin-left:48; width:200; margin-top:'+y+'">Place cursor over ship to highlight individual elements.'
+
+}
+}
+
+
+
+</script>
+
+</head>
+<body scroll="auto" text="#FFFFCC" align="left" bgcolor="#000000" onload="PreLoad();">
+
+<div class="menu">
+
+<table align="left" border="4" cellspacing="0" cellpadding="0" bgcolor="#000000"><tr><td>
+<table align="left" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000">
+<tr height="20">
+<td valign="BOTTOM">
+<a href="..\index-1.htm" onmouseover="root.src='root_on.gif'; return true" onmouseout="root.src='root_off.gif'; return true">
+   <img src="root_off.gif" name="root" border="0" alt="Front Door"></a>
+</td>
+<td valign="BOTTOM">
+<a href="BS_main-1.htm" onmouseover="intro.src='intro_on.gif'; return true" onmouseout="intro.src='intro_off.gif'; return true">
+    <img src="intro_off.gif" name="intro" border="0" alt="Firefall"></a>
+</td><td valign="BOTTOM" align="center">
+<a href="firefall.htm" onmouseover="firefall.src='firefall_on.gif'; return true" onmouseout="firefall.src='firefall_off.gif'; return true">
+    <img src="firefall_off.gif" name="firefall" border="0" width="138" height="29" valign="bottom" alt="firefall"></a>	
+</td>
+</tr><tr valign="TOP">
+<td valign="BOTTOM">
+<a href="crew-1.htm" onmouseover="crew.src='crew_on.gif'; return true" onmouseout="crew.src='crew_off.gif'; return true">
+    <img src="crew_off.gif" name="crew" border="0" alt="crew"></a>
+</td>
+
+<td valign="TOP" align="center">
+<a href="vampires-1.htm" onmouseover="vampires.src='vampires_on.gif'; return true" onmouseout="vampires.src='vampires_off.gif'; return true">
+    <img src="vampires_off.gif" name="vampires" border="0" alt="vampires"></a>
+</td><td valign="TOP" align="center">
+<a href="caulfield.htm" onmouseover="bc.src='bc_on.gif'; return true" onmouseout="bc.src='bc_off.gif'; return true">
+    <img src="bc_off.gif" name="bc" border="0" alt="Burns-Caulfield"></a>
+</td>
+</tr></table>
+</td></tr></table>
+</div>
+
+<div class="content">
+
+
+<h1 style="text-align:center"><i>Theseus</i>:  Gross Axial Morphology (carapace not shown)</h1>
+
+
+<table border="0" valign="CENTER" align="CENTER" width="95%"><tr><!-- 2-CELL Table containing Summary-stats table (right) and bordered graphics (left)-->
+<td valign="TOP"> <!-- Cell containing Summary-stats table -->
+	<table border="0" valign="CENTER" cellspacing="8"><tr valign="TOP">
+		<td align="RIGHT" class="subhd">Thumbnail</td><td valign="CENTER" class="a">Advanced prototype deep-space research/reconnaissance vehicle</td>
+		</tr><tr valign="TOP">
+		<td align="RIGHT" valign="CENTER" class="subhd">Resting Mass</td><td valign="CENTER" class="a">314 tonnes</td>
+		</tr><tr valign="CENTER">
+		<td align="RIGHT" valign="CENTER" class="subhd">Length</td><td valign="CENTER" class="a">55-85m (extensible spine)</td>
+		</tr><tr valign="TOP">
+		<td align="RIGHT" class="subhd">Propulsion</td><td valign="CENTER" class="a">LOS antimatter-teleportation (telematter) drive</td>
+		</tr><tr valign="TOP">
+		<td align="RIGHT" class="subhd">Range</td><td valign="CENTER" class="a">Unlimited (no fuel constraints while within T-M broadcast range)</td>
+		</tr><tr valign="CENTER">
+		<td align="RIGHT" valign="CENTER" class="subhd">Maximum rated burn</td><td valign="CENTER" class="a">3.2G sustained, 7.9G maneuvering</td>
+		</tr><tr valign="TOP">
+		<td align="RIGHT" class="subhd">Onboard Computer</td><td valign="top" class="a">Nikola distributed quantical AI, 10<sup>20</sup>-synapse equivalent. 82% classical elements for operation in decoherent environments; quantum elements decoherence shielded. </td>
+		</tr><tr valign="CENTER">
+		<td align="RIGHT" valign="CENTER" class="subhd">Max. Crew Complement</td><td valign="CENTER" class="a">Ten.  </td>
+		</tr><tr valign="TOP">
+		<td align="RIGHT" class="subhd">Life Support</td><td class="a">Undead optimisation. Mandatory <i>hib<sub>a</sub></i>, <i>hib<sub>c</sub></i>, and <i>leu<sub>b</sub></i> gene-complex retrofits (donor species <i>H. sapiens whedonum</i>, patent pending) for transit dormancy.</td>
+		</tr>
+	
+	</table> 
+</td><!-- End Cell containing Summary-stats table -->
+<td valign="TOP">
+<table border="6" align="RIGHT" width="540" cellspacing="0" cellpadding="0"> <!-- 1-Cell table for bordering planetscape/annotations, and ship table-->
+<tr><td border="0">
+<table border="0" align="RIGHT" width="540" cellspacing="0" cellpadding="0"> <!-- Table containing planetscape/annotations, and ship table-->
+		<tr border="0"><td width="266" height="550" valign="TOP" border="0">
+		<div style="position:absolute; z-index=0;margin-top:0; margin-left:0;"><img src="slices\theseus-off_01.jpg" width="266" height="550" alt=""></div><div id="subtitle" class="subhd" style="position:absolute; z-index=1; text-align:left; margin-left:0; margin-top:0;"><span style="position:absolute; z-index=1; width:200;margin-left:48; margin-top:48">Place cursor over ship to highlight individual elements.</span></div>
+		
+		</td>
+		<td>
+
+		<!-- Table Containing Ship Slices -->
+				<table id="ship" width="274" height="550" border="0" cellpadding="0" cellspacing="0">
+				<tr border="0">
+				<td border="0">
+				<a class="top" href="#" onmouseover="blister.src='slices/theseus-on_02.jpg', ChangeLabel('Observatory','Three-person capacity.  180º uninterrupted naked-eye view along x/y axes, 360º view along z axis.  Telescopic images projected directly onto inner surface of dome.',48); return true" onmouseout="blister.src='slices/theseus-off_02.jpg', ChangeLabel('null','',48); return true">
+				<img src="slices\theseus-off_02.jpg" width="274" border="0" name="blister" height="43" alt=""></a></td>
+			</tr>
+			<tr>
+				<td>
+				<a class="top" href="#" onmouseover="command.src='slices/theseus-on_03.jpg', ChangeLabel('Command Module','Cockpit, secondary life support, quantical metaganglion, head.',48); return true" onmouseout="command.src='slices/theseus-off_03.jpg', ChangeLabel('null','',48); return true">
+				<img src="slices\theseus-off_03.jpg" width="274" height="25" name="command" border="0" alt=""></a></td>
+			</tr>
+			<tr>
+				<td>
+				<a class="top" href="#" onmouseover="service.src='slices/theseus-on_04.jpg', ChangeLabel('Service Module','Primary life support, Recyclables,  quantical metaganglion, EVA',48); return true" onmouseout="service.src='slices/theseus-off_04.jpg', ChangeLabel('null','',48); return true">
+				<img src="slices\theseus-off_04.jpg" width="274" name="service" border="0" height="34" alt=""></a></td>
+			</tr>
+			<tr>
+				<td>
+			    <a class="top" href="#" onmouseover="crypt.src='slices/theseus-on_05.jpg', ChangeLabel('Crypt','Hibernacula: 10 berths standard complement, 20 maximum.',48); return true" onmouseout="crypt.src='slices/theseus-off_05.jpg', ChangeLabel('null','',48); return true">
+					<img src="slices\theseus-off_05.jpg" width="274" name="crypt" border="0" height="26" alt=""></a></td>
+			</tr>
+			<tr>
+				<td>
+			    <a class="top" href="#" onmouseover="cda.src='slices/theseus-on_06.jpg', ChangeLabel('Carapace Docking Assembly','Primary site of carapace attachment.',48); return true" onmouseout="cda.src='slices/theseus-off_06.jpg', ChangeLabel('null','',48); return true">
+					<img src="slices\theseus-off_06.jpg" width="274" height="28" name="cda" border="0" alt=""></a></td>
+			</tr>
+			<tr>
+				<td>
+				<a class="top" href="#" onmouseover="main.src='slices/theseus-on_07.jpg', ChangeLabel('Main Drum','Main galley, Tactical Commons, quantical metaganglion, head, sockets for living quarters, rec/exercise facilities, and accessory research modules. Variable-gravity environment, 0.5G standard.  Significant Coriolis.',48); return true" onmouseout="main.src='slices/theseus-off_07.jpg', ChangeLabel('null','',48); return true">
+		 	<img src="slices\theseus-off_07.jpg" width="274" name="main" border="0" height="72" alt=""></a></td>
+			</tr>
+			<tr valign="bottom">
+				<td valign="bottom">
+				<a class="top" href="#" onmouseover="biomed.src='slices/theseus-on_08.jpg', ChangeLabel('Biomedical Drum','Infirmary, Bio labs, emergency hibernacula (2). Dedicated bearings: while normally locked in rotational synch with Main Drum, can spin at variable G to accomodate research or medical needs.  Rated for continuous spin up to 8G.',230); return true" onmouseout="biomed.src='slices/theseus-off_08.jpg', ChangeLabel('null','',230); return true">
+		    	<img src="slices\theseus-off_08.jpg" width="274" height="28" name="biomed" border="0" alt=""></a>
+			</td>
+			</tr>
+			<tr valign="top">
+				<td valign="top">
+				<a class="top" href="#" onmouseover="spine.src='slices/theseus-on_09.jpg', ChangeLabel('Spine','15m retracted.  Extends to maximum length of 45m. Integrated series of docking hatches provide anchorage for inflatable habs, laboratory facilities, and storage access. Primary access to cargo hold when carapace installed.',230); return true" onmouseout="spine.src='slices/theseus-off_09.jpg', ChangeLabel('null','',230); return true">
+				<img src="slices\theseus-off_09.jpg" name="spine" width="274" height="107" border="0" alt=""></a></td>
+			</tr>
+			<tr>
+				<td>
+				<a class="top" href="#" onmouseover="docks.src='slices/theseus-on_10.jpg', ChangeLabel('Shuttle bays','Standard complement two Coleopter class chemically-fueled mid-range shuttles, 5-seat capacity.',230); return true" onmouseout="docks.src='slices/theseus-off_10.jpg', ChangeLabel('null','',230); return true">
+					<img src="slices\theseus-off_10.jpg" width="274" border="0" name="docks" height="35" alt=""></a></td>
+			</tr>
+			<tr>
+				<td>
+				<a class="top" href="#" onmouseover="fab.src='slices/theseus-on_11.jpg', ChangeLabel('Nanofabrication','Materiel production facilities, matter reserves, head, quantical metaganglion.  Dual atmo/vacuum extrusion ports.  Fab bleeds raw material from telematter reaction-mass reserves.',230); return true" onmouseout="fab.src='slices/theseus-off_11.jpg', ChangeLabel('null','',230); return true">
+					<img src="slices\theseus-off_11.jpg" width="274" border="0" name="fab" height="58" alt=""></a></td>
+			</tr>
+			<tr>
+				<td>
+				<a class="top" href="#" onmouseover="ram.src='slices/theseus-on_12.jpg', ChangeLabel('Ramscoop field generator','16TV Bussard Cryomagnetic field for H+ filterfeeding and long-distance braking: H+ strafing via dual tripartite direct-diode GT lasers.  92% ionisation efficiency.',230); return true" onmouseout="ram.src='slices/theseus-off_12.jpg', ChangeLabel('null','',230); return true">
+					<img src="slices\theseus-off_12.jpg" name="ram" border="0" width="274" height="30" alt=""></a></td>
+			</tr>
+			<tr>
+				<td>
+				<a class="top" href="#" onmouseover="comm.src='slices/theseus-on_13.jpg', ChangeLabel('Communications and Antimatter Acquisition Antennae','832 km² at full extension.  86µ Sine-shiver reflexes for doppler compensation. Self-seals perforations and tears up to 3m.',230); return true" onmouseout="comm.src='slices/theseus-off_13.jpg', ChangeLabel('null','',230); return true">
+					<img src="slices\theseus-off_13.jpg" width="274" name="comm" border="0" height="14" alt=""></a></td>
+			</tr>
+			<tr>
+				<td>
+				<a class="top" href="#" onmouseover="reactor.src='slices/theseus-on_14.jpg', ChangeLabel('Quantum Telematter Reactor','Antimatter production via imprinting of substrate matter with AM quantum specs transmitted from cracking station in Sol/Polar orbit.  Inertial mass optimised  by using  ramscoop coils for magnetic containment.',230); return true" onmouseout="reactor.src='slices/theseus-off_14.jpg', ChangeLabel('null','',230); return true">
+					<img src="slices\theseus-off_14.jpg" width="274" name="reactor" border="0" height="21" alt=""></a></td>
+			</tr>
+			<tr>
+				<td>
+				<a class="top" href="#" onmouseover="torch.src='slices/theseus-on_15.jpg', ChangeLabel('Torch','Twin Boeing T-M fusion thrusters. Exhaust temp 3,000,000K. Plasma venting magnetically mediated.',230); return true" onmouseout="torch.src='slices/theseus-off_15.jpg', ChangeLabel('null','',230); return true">
+					<img src="slices\theseus-off_15.jpg" width="274" name="torch" border="0" height="29" alt=""></a></td>
+			</tr>
+		</table> <!-- End table containing ship slices -->
+		
+		</td></tr></table><!-- End Table containing planetscape/annotations, and ship table -->
+		</td></tr></table><!-- End Bordering Table -->
+
+		
+
+</td></tr></table>
+<br>&nbsp;
+<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;
+
+</div>
+<br><br>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1714026-1";
+urchinTracker();
+</script>
+</body>
+</html>
