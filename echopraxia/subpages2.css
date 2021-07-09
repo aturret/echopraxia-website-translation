@@ -1061,7 +1061,7 @@ blockquote {
 
 #archive-burns-caulfield {
 	background: url("link-burns-caulfield.jpg") 50% 0 no-repeat;
-
+	background-size: cover;
 }
 
 #archive-theseus {
@@ -1090,7 +1090,8 @@ blockquote {
 .archive-links li {
 	display: inline-block;
 	width: 19.180753224632%;
-	margin-left: 1.024003450757%;
+	/*margin-left: 1.024003450757%;*/
+	margin-left: 0.3%;
 	height: 12em;
 	text-align: center;
 	padding: 0;
