@@ -14,9 +14,8 @@
         <!--
         //Preload Images function:
 
-        function PreLoad()
-        {
-            var menu_pics=new Array('intro_on.gif','bc_on.gif','autopsy_on.gif','crew_on.gif','bigben_on.gif', 'firefall_on.gif', 'root_on.gif',
+        function PreLoad() {
+            var menu_pics = new Array('intro_on.gif', 'bc_on.gif', 'autopsy_on.gif', 'crew_on.gif', 'bigben_on.gif', 'firefall_on.gif', 'root_on.gif',
                 'rorshach_on.gif', 'theseus_on.gif.', 'firefall_on.gif');
 
             preloadImages(menu_pics);
@@ -24,8 +23,7 @@
 
         function preloadImages(the_images_array) {
             {
-                for(loop = 0; loop < the_images_array.length; loop++)
-                {
+                for (loop = 0; loop < the_images_array.length; loop++) {
                     var an_image = new Image();
                     an_image.src = the_images_array[loop];
                 }
@@ -48,38 +46,54 @@
 
 <div class="menu">
 
-    <table align="left" border="4" cellspacing="0" cellpadding="0" bgcolor="#000000"><tr><td>
-        <table align="left" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000">
-            <tr height="20">
-                <td valign="BOTTOM">
-                    <a href="../index.htm" onmouseover="root.src='root_on.gif'; return true" onmouseout="root.src='root_off.gif'; return true">
-                        <img src="root_off-1.gif" name="root" border="0" alt="Front Door"></a>
-                </td><td valign="BOTTOM">
-                <a href="BS_main.htm" onmouseover="intro.src='intro_on.gif'; return true" onmouseout="intro.src='intro_off.gif'; return true">
-                    <img src="intro_off-1.gif" name="intro" border="0" alt="Firefall"></a>
-            </td><td valign="TOP" align="center">
-                <a href="firefall.htm" onmouseover="firefall.src='firefall_on.gif'; return true" onmouseout="firefall.src='firefall_off.gif'; return true">
-                    <img src="firefall_off-1.gif" name="firefall" border="0" alt="firefall"></a>
-            </td>
-            </tr><tr valign="TOP">
-            <td valign="BOTTOM" align="center">
-                <a href="theseus-2.htm" onmouseover="theseus.src='theseus_on.gif'; return true" onmouseout="theseus.src='theseus_off.gif'; return true">
-                    <img src="theseus_off-1.gif" name="theseus" border="0" width="138" height="29" valign="bottom" alt="Theseus"></a>
-            </td>
+    <table align="left" border="4" cellspacing="0" cellpadding="0" bgcolor="#000000">
+        <tr>
+            <td>
+                <table align="left" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000">
+                    <tr height="20">
+                        <td valign="BOTTOM">
+                            <a href="../index.htm" onmouseover="root.src='root_on.gif'; return true"
+                               onmouseout="root.src='root_off.gif'; return true">
+                                <img src="root_off-1.gif" name="root" border="0" alt="Front Door"></a>
+                        </td>
+                        <td valign="BOTTOM">
+                            <a href="BS_main.htm" onmouseover="intro.src='intro_on.gif'; return true"
+                               onmouseout="intro.src='intro_off.gif'; return true">
+                                <img src="intro_off-1.gif" name="intro" border="0" alt="Firefall"></a>
+                        </td>
+                        <td valign="TOP" align="center">
+                            <a href="firefall.htm" onmouseover="firefall.src='firefall_on.gif'; return true"
+                               onmouseout="firefall.src='firefall_off.gif'; return true">
+                                <img src="firefall_off-1.gif" name="firefall" border="0" alt="firefall"></a>
+                        </td>
+                    </tr>
+                    <tr valign="TOP">
+                        <td valign="BOTTOM" align="center">
+                            <a href="theseus-2.htm" onmouseover="theseus.src='theseus_on.gif'; return true"
+                               onmouseout="theseus.src='theseus_off.gif'; return true">
+                                <img src="theseus_off-1.gif" name="theseus" border="0" width="138" height="29"
+                                     valign="bottom" alt="Theseus"></a>
+                        </td>
 
-            <td valign="BOTTOM">
-                <a href="crew-2.htm" onmouseover="crew.src='crew_on.gif'; return true" onmouseout="crew.src='crew_off.gif'; return true">
-                    <img src="crew_off-1.gif" name="crew" border="0" alt="crew"></a>
-            </td><td valign="TOP" align="center">
-            <a href="caulfield.htm" onmouseover="bc.src='bc_on.gif'; return true" onmouseout="bc.src='bc_off.gif'; return true">
-                <img src="bc_off.gif" name="bc" border="0" alt="Burns-Caulfield"></a>
-            <!--<a href="#" onmouseover="bigben.src='bigben_on.gif'; return true" onmouseout="bigben.src='bigben_off.gif'; return true">-->
-            <!--    <img src="bigben_off-1.gif" name="bigben" border="0" alt="bigben"></a>-->
-        </td>
-            <!-- <img SRC="blackstrip.gif"> -->
+                        <td valign="BOTTOM">
+                            <a href="crew-2.htm" onmouseover="crew.src='crew_on.gif'; return true"
+                               onmouseout="crew.src='crew_off.gif'; return true">
+                                <img src="crew_off-1.gif" name="crew" border="0" alt="crew"></a>
+                        </td>
+                        <td valign="TOP" align="center">
+                            <a href="caulfield.htm" onmouseover="bc.src='bc_on.gif'; return true"
+                               onmouseout="bc.src='bc_off.gif'; return true">
+                                <img src="bc_off.gif" name="bc" border="0" alt="Burns-Caulfield"></a>
+                            <!--<a href="#" onmouseover="bigben.src='bigben_on.gif'; return true" onmouseout="bigben.src='bigben_off.gif'; return true">-->
+                            <!--    <img src="bigben_off-1.gif" name="bigben" border="0" alt="bigben"></a>-->
+                        </td>
+                        <!-- <img SRC="blackstrip.gif"> -->
 
-        </tr></table>
-    </td></tr></table>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
 </div>
 
 <div class="content">
@@ -88,12 +102,15 @@
     <h1 style="text-align:center">已编辑</h1>
     <table border="0" align="center" cellpadding="10" cellspacing="0" width="70%" summary="">
         <tr>
-            <td><p>鉴于最近在墨尔本虚拟空间和其他地方发生的事件，出于行星安全的考虑，本页面上的信息已被删除。取而代之的是，我们提供了这篇关于<i>智人亚种吸血鬼</i>的发现和复活的档案介绍，该文档取自非泽尔法姆公司，标题为“驯服昨日噩梦，创造美好未来”。此作品已通过公共领域审核，不会侵犯企业版权。</p>
+            <td><p>鉴于最近在墨尔本虚拟空间和其他地方发生的事件，出于行星安全的考虑，本页面上的信息已被删除。取而代之的是，我们提供了这篇关于<i>智人亚种吸血鬼</i>的发现和复活的档案介绍，该文档取自非泽尔法姆公司，标题为“驯服昨日噩梦，创造美好未来”。此作品已通过公共领域审核，不会侵犯企业版权。
+            </p>
             </td>
             <td valign="TOP" align="CENTER">
 
                 <!--SWF file embed code begins after this line-->
-                <iframe width="250%" height="500" src="https://player.bilibili.com/player.html?aid=419112671&bvid=BV1cV411s7tQ&cid=366576156&page=1&high_quality=1&danmuku=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+                <iframe width="250%" height="500"
+                        src="https://player.bilibili.com/player.html?aid=419112671&bvid=BV1cV411s7tQ&cid=366576156&page=1&high_quality=1&danmuku=0"
+                        scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
                 <!--        <video src="../../vampire.mkv" controls="controls">-->
 
                 <!--        </video>-->
@@ -108,7 +125,8 @@
                 <!--Embed code and script end before this line-->
 
 
-            </td></tr>
+            </td>
+        </tr>
 
     </table>
 

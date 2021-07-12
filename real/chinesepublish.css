@@ -1,0 +1,42 @@
+.book-preview {
+    display: flex;
+
+}
+
+.book-preview .introduction{
+
+}
+
+.book-preview .introduction p {
+    font-size: 1.4rem;
+}
+
+.book-preview .illustration {
+    flex: 0 0 33%;
+    width: 100%;
+    height: 100%;
+    padding: 5% 0 5%;
+    /*padding-top: 50px;*/
+    /*padding-left: 50px;*/
+    margin: 0 10% 0;
+
+}
+
+.book-preview .publisher {
+
+}
+
+/*#blindsight-2013-cover {*/
+/*    background-image: url("blindsight2013-cover.jpg");*/
+/*}*/
+
+.purchase-link{
+    margin-top: 45px;
+    margin-bottom: 45px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.purchase-link a{
+    font-size: 1.5rem;
+}
