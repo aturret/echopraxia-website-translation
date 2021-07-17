@@ -1,228 +1,324 @@
 <html>
 <head>
-   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-   <meta name="Author" content="Peter Watts">
-   <meta name="GENERATOR" content="Mozilla/4.04 [en] (Win95; I) [Netscape]">
-   <meta name="keywords" content="Blindsight, Peter Watts, first contact, aliens, science fiction, sf, Tor">
-   <meta name="description" content="Theseus: Technical Overview">
-   <title>盲视 - 忒修斯</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="Author" content="Peter Watts">
+    <meta name="GENERATOR" content="Mozilla/4.04 [en] (Win95; I) [Netscape]">
+    <meta name="keywords" content="Blindsight, Peter Watts, first contact, aliens, science fiction, sf, Tor">
+    <meta name="description" content="Theseus: Technical Overview">
+    <title>盲视 - 忒修斯</title>
 
-<link rel="stylesheet" href="..\BS_stylesheet.css" type="text/css">
-<style type="text/css">
-<!--
-a.most:link {color: #66ffff}
-a.most:visited {color: #0099ff}
-a.most:hover {color: #ffffff}
--->
-</style>
+    <link rel="stylesheet" href="..\BS_stylesheet.css" type="text/css">
+    <style type="text/css">
+        <!--
+        a.most:link {
+            color: #66ffff
+        }
 
-<script type="text/JavaScript">
+        a.most:visited {
+            color: #0099ff
+        }
 
+        a.most:hover {
+            color: #ffffff
+        }
 
+        -->
+    </style>
 
-<!--
-//Preload Images function:
-
-function PreLoad()
-{
-		var menu_pics=new Array('intro_on.gif','bc_on.gif','autopsy_on.gif','crew_on.gif','bigben_on.gif', 'firefall_on.gif', 'root_on.gif',
-		'rorshach_on.gif', 'theseus_on.gif.', 'vampires_on.gif', 'slices/theseus-on_02.jpg', 'slices/theseus-on_03.jpg', 'slices/theseus-on_04.jpg', 'slices/theseus-on_05.jpg', 'slices/theseus-on_06.jpg', 'slices/theseus-on_07.jpg', 'slices/theseus-on_08.jpg', 'slices/theseus-on_09.jpg', 'slices/theseus-on_10.jpg', 'slices/theseus-on_11.jpg', 'slices/theseus-on_12.jpg', 'slices/theseus-on_13.jpg', 'slices/theseus-on_14.jpg', 'slices/theseus-on_15.jpg');
-
-	preloadImages(menu_pics);
-}
-
-function preloadImages(the_images_array) {
-{
-	for(loop = 0; loop < the_images_array.length; loop++)
-	{	
-   		var an_image = new Image();
-		an_image.src = the_images_array[loop];
-	}
-}
-
-}
-
-//-->
-
-/*Changes the legend conetnts in the first cell of rifters diagram table */
-function ChangeLabel(title,desc,y)
-{
-
-var x=document.getElementById('subtitle')
-
-if (title!='null')
-{x.innerHTML='<SPAN style="position:absolute; margin-left:48; width:200; margin-top:'+y+'"><SPAN style="font-size:11pt">'+title+'</SPAN><BR><BR>'+desc+'</SPAN></DIV>'}
-
-else
-
-{x.innerHTML='<SPAN style="position:absolute; margin-left:48; width:200; margin-top:'+y+'">Place cursor over ship to highlight individual elements.'
-
-}
-}
+    <script type="text/JavaScript">
 
 
+        <!--
+        //Preload Images function:
 
-</script>
+        function PreLoad() {
+            var menu_pics = new Array('intro_on.gif', 'bc_on.gif', 'autopsy_on.gif', 'crew_on.gif', 'bigben_on.gif', 'firefall_on.gif', 'root_on.gif',
+                'rorshach_on.gif', 'theseus_on.gif.', 'vampires_on.gif', 'slices/theseus-on_02.jpg', 'slices/theseus-on_03.jpg', 'slices/theseus-on_04.jpg', 'slices/theseus-on_05.jpg', 'slices/theseus-on_06.jpg', 'slices/theseus-on_07.jpg', 'slices/theseus-on_08.jpg', 'slices/theseus-on_09.jpg', 'slices/theseus-on_10.jpg', 'slices/theseus-on_11.jpg', 'slices/theseus-on_12.jpg', 'slices/theseus-on_13.jpg', 'slices/theseus-on_14.jpg', 'slices/theseus-on_15.jpg');
+
+            preloadImages(menu_pics);
+        }
+
+        function preloadImages(the_images_array) {
+            {
+                for (loop = 0; loop < the_images_array.length; loop++) {
+                    var an_image = new Image();
+                    an_image.src = the_images_array[loop];
+                }
+            }
+
+        }
+
+        //-->
+
+        /*Changes the legend conetnts in the first cell of rifters diagram table */
+        function ChangeLabel(title, desc, y) {
+
+            var x = document.getElementById('subtitle')
+
+            if (title != 'null') {
+                x.innerHTML = '<SPAN style="position:absolute; margin-left:48; width:200; margin-top:' + y + '"><SPAN style="font-size:11pt">' + title + '</SPAN><BR><BR>' + desc + '</SPAN></DIV>'
+            } else {
+                x.innerHTML = '<SPAN style="position:absolute; margin-left:48; width:200; margin-top:' + y + '">Place cursor over ship to highlight individual elements.'
+
+            }
+        }
+
+
+    </script>
 
 </head>
 <body scroll="auto" text="#FFFFCC" align="left" bgcolor="#000000" onload="PreLoad();">
 
 <div class="menu">
 
-<table align="left" border="4" cellspacing="0" cellpadding="0" bgcolor="#000000"><tr><td>
-<table align="left" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000">
-<tr height="20">
-<td valign="BOTTOM">
-<a href="..\index-1.htm" onmouseover="root.src='root_on.gif'; return true" onmouseout="root.src='root_off.gif'; return true">
-   <img src="root_off.gif" name="root" border="0" alt="Front Door"></a>
-</td>
-<td valign="BOTTOM">
-<a href="BS_main-1.htm" onmouseover="intro.src='intro_on.gif'; return true" onmouseout="intro.src='intro_off.gif'; return true">
-    <img src="intro_off.gif" name="intro" border="0" alt="Firefall"></a>
-</td><td valign="BOTTOM" align="center">
-<a href="firefall.htm" onmouseover="firefall.src='firefall_on.gif'; return true" onmouseout="firefall.src='firefall_off.gif'; return true">
-    <img src="firefall_off.gif" name="firefall" border="0" width="138" height="29" valign="bottom" alt="firefall"></a>	
-</td>
-</tr><tr valign="TOP">
-<td valign="BOTTOM">
-<a href="crew-1.htm" onmouseover="crew.src='crew_on.gif'; return true" onmouseout="crew.src='crew_off.gif'; return true">
-    <img src="crew_off.gif" name="crew" border="0" alt="crew"></a>
-</td>
+    <table align="left" border="4" cellspacing="0" cellpadding="0" bgcolor="#000000">
+        <tr>
+            <td>
+                <table align="left" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000">
+                    <tr height="20">
+                        <td valign="BOTTOM">
+                            <a href="..\index-1.htm" onmouseover="root.src='root_on.gif'; return true"
+                               onmouseout="root.src='root_off.gif'; return true">
+                                <img src="root_off.gif" name="root" border="0" alt="Front Door"></a>
+                        </td>
+                        <td valign="BOTTOM">
+                            <a href="BS_main-1.htm" onmouseover="intro.src='intro_on.gif'; return true"
+                               onmouseout="intro.src='intro_off.gif'; return true">
+                                <img src="intro_off.gif" name="intro" border="0" alt="Firefall"></a>
+                        </td>
+                        <td valign="BOTTOM" align="center">
+                            <a href="firefall.htm" onmouseover="firefall.src='firefall_on.gif'; return true"
+                               onmouseout="firefall.src='firefall_off.gif'; return true">
+                                <img src="firefall_off.gif" name="firefall" border="0" width="138" height="29"
+                                     valign="bottom" alt="firefall"></a>
+                        </td>
+                    </tr>
+                    <tr valign="TOP">
+                        <td valign="BOTTOM">
+                            <a href="crew-1.htm" onmouseover="crew.src='crew_on.gif'; return true"
+                               onmouseout="crew.src='crew_off.gif'; return true">
+                                <img src="crew_off.gif" name="crew" border="0" alt="crew"></a>
+                        </td>
 
-<td valign="TOP" align="center">
-<a href="vampires-1.htm" onmouseover="vampires.src='vampires_on.gif'; return true" onmouseout="vampires.src='vampires_off.gif'; return true">
-    <img src="vampires_off.gif" name="vampires" border="0" alt="vampires"></a>
-</td><td valign="TOP" align="center">
-<a href="caulfield.htm" onmouseover="bc.src='bc_on.gif'; return true" onmouseout="bc.src='bc_off.gif'; return true">
-    <img src="bc_off.gif" name="bc" border="0" alt="Burns-Caulfield"></a>
-</td>
-</tr></table>
-</td></tr></table>
+                        <td valign="TOP" align="center">
+                            <a href="vampires-1.htm" onmouseover="vampires.src='vampires_on.gif'; return true"
+                               onmouseout="vampires.src='vampires_off.gif'; return true">
+                                <img src="vampires_off.gif" name="vampires" border="0" alt="vampires"></a>
+                        </td>
+                        <td valign="TOP" align="center">
+                            <a href="caulfield.htm" onmouseover="bc.src='bc_on.gif'; return true"
+                               onmouseout="bc.src='bc_off.gif'; return true">
+                                <img src="bc_off.gif" name="bc" border="0" alt="Burns-Caulfield"></a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
 </div>
 
 <div class="content">
 
 
-<h1 style="text-align:center"><i>Theseus</i>:  Gross Axial Morphology (carapace not shown)</h1>
+    <h1 style="text-align:center"><i>忒修斯</i>：总体轴向形态图（未显示外壳）</h1>
 
 
-<table border="0" valign="CENTER" align="CENTER" width="95%"><tr><!-- 2-CELL Table containing Summary-stats table (right) and bordered graphics (left)-->
-<td valign="TOP"> <!-- Cell containing Summary-stats table -->
-	<table border="0" valign="CENTER" cellspacing="8"><tr valign="TOP">
-		<td align="RIGHT" class="subhd">Thumbnail</td><td valign="CENTER" class="a">Advanced prototype deep-space research/reconnaissance vehicle</td>
-		</tr><tr valign="TOP">
-		<td align="RIGHT" valign="CENTER" class="subhd">Resting Mass</td><td valign="CENTER" class="a">314 tonnes</td>
-		</tr><tr valign="CENTER">
-		<td align="RIGHT" valign="CENTER" class="subhd">Length</td><td valign="CENTER" class="a">55-85m (extensible spine)</td>
-		</tr><tr valign="TOP">
-		<td align="RIGHT" class="subhd">Propulsion</td><td valign="CENTER" class="a">LOS antimatter-teleportation (telematter) drive</td>
-		</tr><tr valign="TOP">
-		<td align="RIGHT" class="subhd">Range</td><td valign="CENTER" class="a">Unlimited (no fuel constraints while within T-M broadcast range)</td>
-		</tr><tr valign="CENTER">
-		<td align="RIGHT" valign="CENTER" class="subhd">Maximum rated burn</td><td valign="CENTER" class="a">3.2G sustained, 7.9G maneuvering</td>
-		</tr><tr valign="TOP">
-		<td align="RIGHT" class="subhd">Onboard Computer</td><td valign="top" class="a">Nikola distributed quantical AI, 10<sup>20</sup>-synapse equivalent. 82% classical elements for operation in decoherent environments; quantum elements decoherence shielded. </td>
-		</tr><tr valign="CENTER">
-		<td align="RIGHT" valign="CENTER" class="subhd">Max. Crew Complement</td><td valign="CENTER" class="a">Ten.  </td>
-		</tr><tr valign="TOP">
-		<td align="RIGHT" class="subhd">Life Support</td><td class="a">Undead optimisation. Mandatory <i>hib<sub>a</sub></i>, <i>hib<sub>c</sub></i>, and <i>leu<sub>b</sub></i> gene-complex retrofits (donor species <i>H. sapiens whedonum</i>, patent pending) for transit dormancy.</td>
-		</tr>
-	
-	</table> 
-</td><!-- End Cell containing Summary-stats table -->
-<td valign="TOP">
-<table border="6" align="RIGHT" width="540" cellspacing="0" cellpadding="0"> <!-- 1-Cell table for bordering planetscape/annotations, and ship table-->
-<tr><td border="0">
-<table border="0" align="RIGHT" width="540" cellspacing="0" cellpadding="0"> <!-- Table containing planetscape/annotations, and ship table-->
-		<tr border="0"><td width="266" height="550" valign="TOP" border="0">
-		<div style="position:absolute; z-index=0;margin-top:0; margin-left:0;"><img src="slices\theseus-off_01.jpg" width="266" height="550" alt=""></div><div id="subtitle" class="subhd" style="position:absolute; z-index=1; text-align:left; margin-left:0; margin-top:0;"><span style="position:absolute; z-index=1; width:200;margin-left:48; margin-top:48">Place cursor over ship to highlight individual elements.</span></div>
-		
-		</td>
-		<td>
+    <table border="0" valign="CENTER" align="CENTER" width="80%">
+        <tr><!-- 2-CELL Table containing Summary-stats table (right) and bordered graphics (left)-->
+            <td valign="TOP"> <!-- Cell containing Summary-stats table -->
+                <table border="0" valign="CENTER" cellspacing="8">
+                    <tr valign="TOP">
+                        <td align="RIGHT" class="subhd">基础原型</td>
+                        <td valign="CENTER" class="a">深空研究/侦察载具先进原型机</td>
+                    </tr>
+                    <tr valign="TOP">
+                        <td align="RIGHT" valign="CENTER" class="subhd">静止质量</td>
+                        <td valign="CENTER" class="a">314吨</td>
+                    </tr>
+                    <tr valign="CENTER">
+                        <td align="RIGHT" valign="CENTER" class="subhd">长度</td>
+                        <td valign="CENTER" class="a">55-85米（船脊可伸缩）</td>
+                    </tr>
+                    <tr valign="TOP">
+                        <td align="RIGHT" class="subhd">推进力</td>
+                        <td valign="CENTER" class="a">LOS反物质传输（远程物质）驱动系统</td>
+                    </tr>
+                    <tr valign="TOP">
+                        <td align="RIGHT" class="subhd">航程</td>
+                        <td valign="CENTER" class="a">无限制（在远程物质广播范围内不受燃料限制）
+                        </td>
+                    </tr>
+                    <tr valign="CENTER">
+                        <td align="RIGHT" valign="CENTER" class="subhd">最大点火加速度</td>
+                        <td valign="CENTER" class="a">自动运行时3.2G，手动操作时7.9G</td>
+                    </tr>
+                    <tr valign="TOP">
+                        <td align="RIGHT" class="subhd">舰载计算机</td>
+                        <td valign="top" class="a">尼古拉分布式人工智能，计算效果等价于10<sup>20</sup>个突触。82%为适用于退相干环境的经典元件；量子元件屏蔽退相干。
+                        </td>
+                    </tr>
+                    <tr valign="CENTER">
+                        <td align="RIGHT" valign="CENTER" class="subhd">最大船员容量</td>
+                        <td valign="CENTER" class="a">10名。</td>
+                    </tr>
+                    <tr valign="TOP">
+                        <td align="RIGHT" class="subhd">生命支持系统</td>
+                        <td class="a">不死族优化系统。为行进期间的休眠，强制性进行<i>hib<sub>a</sub></i>、<i>hib<sub>c</sub></i>以及<i>leu<sub>b</sub></i>基因复合改造。（供体物种为<i>H. sapiens whedonum</i>，专利申请中）
+                        </td>
+                    </tr>
 
-		<!-- Table Containing Ship Slices -->
-				<table id="ship" width="274" height="550" border="0" cellpadding="0" cellspacing="0">
-				<tr border="0">
-				<td border="0">
-				<a class="top" href="#" onmouseover="blister.src='slices/theseus-on_02.jpg', ChangeLabel('Observatory','Three-person capacity.  180� uninterrupted naked-eye view along x/y axes, 360� view along z axis.  Telescopic images projected directly onto inner surface of dome.',48); return true" onmouseout="blister.src='slices/theseus-off_02.jpg', ChangeLabel('null','',48); return true">
-				<img src="slices\theseus-off_02.jpg" width="274" border="0" name="blister" height="43" alt=""></a></td>
-			</tr>
-			<tr>
-				<td>
-				<a class="top" href="#" onmouseover="command.src='slices/theseus-on_03.jpg', ChangeLabel('Command Module','Cockpit, secondary life support, quantical metaganglion, head.',48); return true" onmouseout="command.src='slices/theseus-off_03.jpg', ChangeLabel('null','',48); return true">
-				<img src="slices\theseus-off_03.jpg" width="274" height="25" name="command" border="0" alt=""></a></td>
-			</tr>
-			<tr>
-				<td>
-				<a class="top" href="#" onmouseover="service.src='slices/theseus-on_04.jpg', ChangeLabel('Service Module','Primary life support, Recyclables,  quantical metaganglion, EVA',48); return true" onmouseout="service.src='slices/theseus-off_04.jpg', ChangeLabel('null','',48); return true">
-				<img src="slices\theseus-off_04.jpg" width="274" name="service" border="0" height="34" alt=""></a></td>
-			</tr>
-			<tr>
-				<td>
-			    <a class="top" href="#" onmouseover="crypt.src='slices/theseus-on_05.jpg', ChangeLabel('Crypt','Hibernacula: 10 berths standard complement, 20 maximum.',48); return true" onmouseout="crypt.src='slices/theseus-off_05.jpg', ChangeLabel('null','',48); return true">
-					<img src="slices\theseus-off_05.jpg" width="274" name="crypt" border="0" height="26" alt=""></a></td>
-			</tr>
-			<tr>
-				<td>
-			    <a class="top" href="#" onmouseover="cda.src='slices/theseus-on_06.jpg', ChangeLabel('Carapace Docking Assembly','Primary site of carapace attachment.',48); return true" onmouseout="cda.src='slices/theseus-off_06.jpg', ChangeLabel('null','',48); return true">
-					<img src="slices\theseus-off_06.jpg" width="274" height="28" name="cda" border="0" alt=""></a></td>
-			</tr>
-			<tr>
-				<td>
-				<a class="top" href="#" onmouseover="main.src='slices/theseus-on_07.jpg', ChangeLabel('Main Drum','Main galley, Tactical Commons, quantical metaganglion, head, sockets for living quarters, rec/exercise facilities, and accessory research modules. Variable-gravity environment, 0.5G standard.  Significant Coriolis.',48); return true" onmouseout="main.src='slices/theseus-off_07.jpg', ChangeLabel('null','',48); return true">
-		 	<img src="slices\theseus-off_07.jpg" width="274" name="main" border="0" height="72" alt=""></a></td>
-			</tr>
-			<tr valign="bottom">
-				<td valign="bottom">
-				<a class="top" href="#" onmouseover="biomed.src='slices/theseus-on_08.jpg', ChangeLabel('Biomedical Drum','Infirmary, Bio labs, emergency hibernacula (2). Dedicated bearings: while normally locked in rotational synch with Main Drum, can spin at variable G to accomodate research or medical needs.  Rated for continuous spin up to 8G.',230); return true" onmouseout="biomed.src='slices/theseus-off_08.jpg', ChangeLabel('null','',230); return true">
-		    	<img src="slices\theseus-off_08.jpg" width="274" height="28" name="biomed" border="0" alt=""></a>
-			</td>
-			</tr>
-			<tr valign="top">
-				<td valign="top">
-				<a class="top" href="#" onmouseover="spine.src='slices/theseus-on_09.jpg', ChangeLabel('Spine','15m retracted.  Extends to maximum length of 45m. Integrated series of docking hatches provide anchorage for inflatable habs, laboratory facilities, and storage access. Primary access to cargo hold when carapace installed.',230); return true" onmouseout="spine.src='slices/theseus-off_09.jpg', ChangeLabel('null','',230); return true">
-				<img src="slices\theseus-off_09.jpg" name="spine" width="274" height="107" border="0" alt=""></a></td>
-			</tr>
-			<tr>
-				<td>
-				<a class="top" href="#" onmouseover="docks.src='slices/theseus-on_10.jpg', ChangeLabel('Shuttle bays','Standard complement two Coleopter class chemically-fueled mid-range shuttles, 5-seat capacity.',230); return true" onmouseout="docks.src='slices/theseus-off_10.jpg', ChangeLabel('null','',230); return true">
-					<img src="slices\theseus-off_10.jpg" width="274" border="0" name="docks" height="35" alt=""></a></td>
-			</tr>
-			<tr>
-				<td>
-				<a class="top" href="#" onmouseover="fab.src='slices/theseus-on_11.jpg', ChangeLabel('Nanofabrication','Materiel production facilities, matter reserves, head, quantical metaganglion.  Dual atmo/vacuum extrusion ports.  Fab bleeds raw material from telematter reaction-mass reserves.',230); return true" onmouseout="fab.src='slices/theseus-off_11.jpg', ChangeLabel('null','',230); return true">
-					<img src="slices\theseus-off_11.jpg" width="274" border="0" name="fab" height="58" alt=""></a></td>
-			</tr>
-			<tr>
-				<td>
-				<a class="top" href="#" onmouseover="ram.src='slices/theseus-on_12.jpg', ChangeLabel('Ramscoop field generator','16TV Bussard Cryomagnetic field for H+ filterfeeding and long-distance braking: H+ strafing via dual tripartite direct-diode GT lasers.  92% ionisation efficiency.',230); return true" onmouseout="ram.src='slices/theseus-off_12.jpg', ChangeLabel('null','',230); return true">
-					<img src="slices\theseus-off_12.jpg" name="ram" border="0" width="274" height="30" alt=""></a></td>
-			</tr>
-			<tr>
-				<td>
-				<a class="top" href="#" onmouseover="comm.src='slices/theseus-on_13.jpg', ChangeLabel('Communications and Antimatter Acquisition Antennae','832 km� at full extension.  86� Sine-shiver reflexes for doppler compensation. Self-seals perforations and tears up to 3m.',230); return true" onmouseout="comm.src='slices/theseus-off_13.jpg', ChangeLabel('null','',230); return true">
-					<img src="slices\theseus-off_13.jpg" width="274" name="comm" border="0" height="14" alt=""></a></td>
-			</tr>
-			<tr>
-				<td>
-				<a class="top" href="#" onmouseover="reactor.src='slices/theseus-on_14.jpg', ChangeLabel('Quantum Telematter Reactor','Antimatter production via imprinting of substrate matter with AM quantum specs transmitted from cracking station in Sol/Polar orbit.  Inertial mass optimised  by using  ramscoop coils for magnetic containment.',230); return true" onmouseout="reactor.src='slices/theseus-off_14.jpg', ChangeLabel('null','',230); return true">
-					<img src="slices\theseus-off_14.jpg" width="274" name="reactor" border="0" height="21" alt=""></a></td>
-			</tr>
-			<tr>
-				<td>
-				<a class="top" href="#" onmouseover="torch.src='slices/theseus-on_15.jpg', ChangeLabel('Torch','Twin Boeing T-M fusion thrusters. Exhaust temp 3,000,000K. Plasma venting magnetically mediated.',230); return true" onmouseout="torch.src='slices/theseus-off_15.jpg', ChangeLabel('null','',230); return true">
-					<img src="slices\theseus-off_15.jpg" width="274" name="torch" border="0" height="29" alt=""></a></td>
-			</tr>
-		</table> <!-- End table containing ship slices -->
-		
-		</td></tr></table><!-- End Table containing planetscape/annotations, and ship table -->
-		</td></tr></table><!-- End Bordering Table -->
+                </table>
+            </td><!-- End Cell containing Summary-stats table -->
+            <td valign="TOP">
+                <table border="6" align="RIGHT" width="540" cellspacing="0" cellpadding="0">
+                    <!-- 1-Cell table for bordering planetscape/annotations, and ship table-->
+                    <tr>
+                        <td border="0">
+                            <table border="0" align="RIGHT" width="540" cellspacing="0" cellpadding="0">
+                                <!-- Table containing planetscape/annotations, and ship table-->
+                                <tr border="0">
+                                    <td width="266" height="550" valign="TOP" border="0">
+                                        <div style="position:absolute; z-index=0;margin-top:0; margin-left:0;"><img
+                                                src="slices\theseus-off_01.jpg" width="266" height="550" alt=""></div>
+                                        <div id="subtitle" class="subhd"
+                                             style="position:absolute; z-index=1; text-align:left; margin-left:0; margin-top:0;">
+                                            <span style="position:absolute; z-index=1; width:200;margin-left:48; margin-top:48">请移动光标置于舰船上以获取各组件详情。</span>
+                                        </div>
 
-		
+                                    </td>
+                                    <td>
 
-</td></tr></table>
-<br>&nbsp;
-<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;
+                                        <!-- Table Containing Ship Slices -->
+                                        <table id="ship" width="274" height="550" border="0" cellpadding="0"
+                                               cellspacing="0">
+                                            <tr border="0">
+                                                <td border="0">
+                                                    <a class="top" href="#"
+                                                       onmouseover="blister.src='slices/theseus-on_02.jpg', ChangeLabel('观象囊','可容纳三人。X/Y轴平面内180°不间断裸眼视图，Z轴方向360°全视图。望远镜图像将直接投射至圆顶的内表面上。',48); return true"
+                                                       onmouseout="blister.src='slices/theseus-off_02.jpg', ChangeLabel('null','',48); return true">
+                                                        <img src="slices\theseus-off_02.jpg" width="274" border="0"
+                                                             name="blister" height="43" alt=""></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a class="top" href="#"
+                                                       onmouseover="command.src='slices/theseus-on_03.jpg', ChangeLabel('指挥舱','驾驶舱，备用生命支持系统，量子元神经节，头部。',48); return true"
+                                                       onmouseout="command.src='slices/theseus-off_03.jpg', ChangeLabel('null','',48); return true">
+                                                        <img src="slices\theseus-off_03.jpg" width="274" height="25"
+                                                             name="command" border="0" alt=""></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a class="top" href="#"
+                                                       onmouseover="service.src='slices/theseus-on_04.jpg', ChangeLabel('服务舱','主要生命支持系统，可回收物，量子元神经节，舱外活动设备',48); return true"
+                                                       onmouseout="service.src='slices/theseus-off_04.jpg', ChangeLabel('null','',48); return true">
+                                                        <img src="slices\theseus-off_04.jpg" width="274" name="service"
+                                                             border="0" height="34" alt=""></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a class="top" href="#"
+                                                       onmouseover="crypt.src='slices/theseus-on_05.jpg', ChangeLabel('地下室','冬眠舱：10个标准床位，最多可容纳20人。',48); return true"
+                                                       onmouseout="crypt.src='slices/theseus-off_05.jpg', ChangeLabel('null','',48); return true">
+                                                        <img src="slices\theseus-off_05.jpg" width="274" name="crypt"
+                                                             border="0" height="26" alt=""></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a class="top" href="#"
+                                                       onmouseover="cda.src='slices/theseus-on_06.jpg', ChangeLabel('外壳对接组件','外壳的主要附着部位。',48); return true"
+                                                       onmouseout="cda.src='slices/theseus-off_06.jpg', ChangeLabel('null','',48); return true">
+                                                        <img src="slices\theseus-off_06.jpg" width="274" height="28"
+                                                             name="cda" border="0" alt=""></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a class="top" href="#"
+                                                       onmouseover="main.src='slices/theseus-on_07.jpg', ChangeLabel('主旋转舱','主厨房、战术公共区、量子元神经节、头部、生活区插座、娱乐/锻炼设施以及附属研究模块。可变重力环境，标准条件下0.5个标准重力。科里奥利力显著。',48); return true"
+                                                       onmouseout="main.src='slices/theseus-off_07.jpg', ChangeLabel('null','',48); return true">
+                                                        <img src="slices\theseus-off_07.jpg" width="274" name="main"
+                                                             border="0" height="72" alt=""></a></td>
+                                            </tr>
+                                            <tr valign="bottom">
+                                                <td valign="bottom">
+                                                    <a class="top" href="#"
+                                                       onmouseover="biomed.src='slices/theseus-on_08.jpg', ChangeLabel('生物医学旋转舱','医务室，生物实验室，两个紧急冬眠舱。专用轴承：当通常锁定与主旋转舱旋转同步，可在可变重力下旋转，以适应研究或医疗需求。额定持续旋转重力最高可达8G。',230); return true"
+                                                       onmouseout="biomed.src='slices/theseus-off_08.jpg', ChangeLabel('null','',230); return true">
+                                                        <img src="slices\theseus-off_08.jpg" width="274" height="28"
+                                                             name="biomed" border="0" alt=""></a>
+                                                </td>
+                                            </tr>
+                                            <tr valign="top">
+                                                <td valign="top">
+                                                    <a class="top" href="#"
+                                                       onmouseover="spine.src='slices/theseus-on_09.jpg', ChangeLabel('船脊','未伸展时长15米。伸展后最大长度为45米。集成的一系列对接舱口为充气舱、实验室设施和存储通道提供锚固。在已加装外壳的情况下，是进入货舱的主要通道。',230); return true"
+                                                       onmouseout="spine.src='slices/theseus-off_09.jpg', ChangeLabel('null','',230); return true">
+                                                        <img src="slices\theseus-off_09.jpg" name="spine" width="274"
+                                                             height="107" border="0" alt=""></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a class="top" href="#"
+                                                       onmouseover="docks.src='slices/theseus-on_10.jpg', ChangeLabel('穿梭机停靠区','标准备用组件，两台化学燃料中程环翼机类穿梭机，单个穿梭机容量为5座。',230); return true"
+                                                       onmouseout="docks.src='slices/theseus-off_10.jpg', ChangeLabel('null','',230); return true">
+                                                        <img src="slices\theseus-off_10.jpg" width="274" border="0"
+                                                             name="docks" height="35" alt=""></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a class="top" href="#"
+                                                       onmouseover="fab.src='slices/theseus-on_11.jpg', ChangeLabel('纳米生产工厂','物料生产设施，物料储备，头部，量子元神经节。大气/真空两用挤型端口。生产工厂从远物质反应-质量储备中抽取原料。',230); return true"
+                                                       onmouseout="fab.src='slices/theseus-off_11.jpg', ChangeLabel('null','',230); return true">
+                                                        <img src="slices\theseus-off_11.jpg" width="274" border="0"
+                                                             name="fab" height="58" alt=""></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a class="top" href="#"
+                                                       onmouseover="ram.src='slices/theseus-on_12.jpg', ChangeLabel('冲压磁场发生器','采用16TV布萨德冷磁场H+过滤输入原料并进行远程制动：通过双三部直接二极管GT激光器进行H+轰击。电离率92%。',230); return true"
+                                                       onmouseout="ram.src='slices/theseus-off_12.jpg', ChangeLabel('null','',230); return true">
+                                                        <img src="slices\theseus-off_12.jpg" name="ram" border="0"
+                                                             width="274" height="30" alt=""></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a class="top" href="#"
+                                                       onmouseover="comm.src='slices/theseus-on_13.jpg', ChangeLabel('通信及反物质接收天线','全伸展面积为832平方千米，正弦颤抖反射86μ，用于多普勒补偿。自密封穿孔与裂缝最大为3米。',230); return true"
+                                                       onmouseout="comm.src='slices/theseus-off_13.jpg', ChangeLabel('null','',230); return true">
+                                                        <img src="slices\theseus-off_13.jpg" width="274" name="comm"
+                                                             border="0" height="14" alt=""></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a class="top" href="#"
+                                                       onmouseover="reactor.src='slices/theseus-on_14.jpg', ChangeLabel('量子远程物质反应堆','利用从极日同步轨道裂解站传输的反物质量子颗粒衬底物质印迹产生反物质。通过使用冲压线圈来优化磁性容器的惯性质量。',230); return true"
+                                                       onmouseout="reactor.src='slices/theseus-off_14.jpg', ChangeLabel('null','',230); return true">
+                                                        <img src="slices\theseus-off_14.jpg" width="274" name="reactor"
+                                                             border="0" height="21" alt=""></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a class="top" href="#"
+                                                       onmouseover="torch.src='slices/theseus-on_15.jpg', ChangeLabel('火炬点火系统','双波音远程物质核聚变推进器。排气温度3000000K。排放出的等离子体由磁性介质传导。',230); return true"
+                                                       onmouseout="torch.src='slices/theseus-off_15.jpg', ChangeLabel('null','',230); return true">
+                                                        <img src="slices\theseus-off_15.jpg" width="274" name="torch"
+                                                             border="0" height="29" alt=""></a></td>
+                                            </tr>
+                                        </table> <!-- End table containing ship slices -->
+
+                                    </td>
+                                </tr>
+                            </table><!-- End Table containing planetscape/annotations, and ship table -->
+                        </td>
+                    </tr>
+                </table><!-- End Bordering Table -->
+
+
+            </td>
+        </tr>
+    </table>
+    <br>&nbsp;
+    <br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;
 
 </div>
 <br><br>
@@ -230,8 +326,8 @@ else
 <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
 </script>
 <script type="text/javascript">
-_uacct = "UA-1714026-1";
-urchinTracker();
+    _uacct = "UA-1714026-1";
+    urchinTracker();
 </script>
 </body>
 </html>
