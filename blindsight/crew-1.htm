@@ -2,146 +2,178 @@
 <!-- charset=iso-8859-1 -->
 <html>
 <head>
-   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-   <meta name="Author" content="Peter Watts">
-   <meta name="GENERATOR" content="Mozilla/4.7 [en] (Win95; U) [Netscape]">
-   <meta name="" content="">
-   <meta name="description" content="Blindsight:  Crew Profiles">
-   <title>盲视 - 船员信息</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="Author" content="Peter Watts">
+	<meta name="GENERATOR" content="Mozilla/4.7 [en] (Win95; U) [Netscape]">
+	<meta name="" content="">
+	<meta name="description" content="Blindsight:  Crew Profiles">
+	<title>盲视 - 船员信息</title>
 
-<link rel="stylesheet" href="..\BS_stylesheet-1.css" type="text/css">
+	<link rel="stylesheet" href="..\BS_stylesheet-1.css" type="text/css">
 
-<script type="text/JavaScript">
+	<script type="text/JavaScript">
 
-<!--
+		<!--
 
-//Preload Images function:
+		//Preload Images function:
 
-function PreLoad()
-{
-		var menu_pics=new Array('intro_on.gif','bc_on.gif','autopsy_on.gif','crew_on.gif','bigben_on.gif', 'firefall_on.gif', 'root_on.gif',
-		'rorshach_on.gif', 'theseus_on.gif.', 'vampires_on.gif', 'bates_on.jpg', 'james_on.jpg', 'keeton_on.jpg', 'sarasti_on.jpg', 'cunningham_on.jpg', 'reset_on.jpg');
+		function PreLoad() {
+			var menu_pics = new Array('intro_on.gif', 'bc_on.gif', 'autopsy_on.gif', 'crew_on.gif', 'bigben_on.gif', 'firefall_on.gif', 'root_on.gif',
+					'rorshach_on.gif', 'theseus_on.gif.', 'vampires_on.gif', 'bates_on.jpg', 'james_on.jpg', 'keeton_on.jpg', 'sarasti_on.jpg', 'cunningham_on.jpg', 'reset_on.jpg');
 
-	preLoadBios(menu_pics);
-}
+			preLoadBios(menu_pics);
+		}
 
-function preLoadBios(the_images_array)
-{
-	for(loop = 0; loop < the_images_array.length; loop++)
-	{	
-   		var an_image = new Image();
-		an_image.src = the_images_array[loop];
-	}
-}
+		function preLoadBios(the_images_array) {
+			for (loop = 0; loop < the_images_array.length; loop++) {
+				var an_image = new Image();
+				an_image.src = the_images_array[loop];
+			}
+		}
 
 
-
-/*Load bios into table */
-function LoadBio(txt,hdr)
-{
-var x=document.getElementById('profile')
-var y=document.getElementById('header')
-x.innerHTML=txt
-y.innerHTML=hdr
-}
+		/*Load bios into table */
+		function LoadBio(txt, hdr) {
+			var x = document.getElementById('profile')
+			var y = document.getElementById('header')
+			x.innerHTML = txt
+			y.innerHTML = hdr
+		}
 
 
-//-->
+		//-->
 
-</script>
+	</script>
 
 </head>
 <body scroll="auto" text="#FFFFCC" align="left" bgcolor="#000000" onload="PreLoad();">
 
 <div class="menu">
-<a name="CP"> </a>
-<table align="left" border="4" cellspacing="0" cellpadding="0" bgcolor="#000000"><tr><td>
-<table align="left" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000">
-<tr height="20">
-<td valign="BOTTOM">
-<a href="../index.htm" onmouseover="root.src='root_on.gif'; return true" onmouseout="root.src='root_off.gif'; return true">
-   <img src="root_off-1.gif" name="root" border="0" alt="Front Door"></a>
-</td>
-<td valign="BOTTOM">
-<a href="BS_main.htm" onmouseover="intro.src='intro_on.gif'; return true" onmouseout="intro.src='intro_off.gif'; return true">
-    <img src="intro_off-1.gif" name="intro" border="0" alt="Firefall"></a>
-</td><td valign="BOTTOM">
-<a href="firefall.htm" onmouseover="firefall.src='firefall_on.gif'; return true" onmouseout="firefall.src='firefall_off.gif'; return true">
-    <img src="firefall_off-1.gif" name="firefall" border="0" alt="firefall"></a>
-</td>
-</tr><tr valign="TOP">
-<td valign="BOTTOM" align="center">
-<a href="theseus-2.htm" onmouseover="theseus.src='theseus_on.gif'; return true" onmouseout="theseus.src='theseus_off.gif'; return true">
-    <img src="theseus_off-1.gif" name="theseus" border="0" width="138" height="29" valign="bottom" alt="Theseus"></a>	
-</td>
+	<a name="CP"> </a>
+	<table align="left" border="4" cellspacing="0" cellpadding="0" bgcolor="#000000">
+		<tr>
+			<td>
+				<table align="left" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000">
+					<tr height="20">
+						<td valign="BOTTOM">
+							<a href="../index.htm" onmouseover="root.src='root_on.gif'; return true"
+							   onmouseout="root.src='root_off.gif'; return true">
+								<img src="root_off-1.gif" name="root" border="0" alt="Front Door"></a>
+						</td>
+						<td valign="BOTTOM">
+							<a href="BS_main.htm" onmouseover="intro.src='intro_on.gif'; return true"
+							   onmouseout="intro.src='intro_off.gif'; return true">
+								<img src="intro_off-1.gif" name="intro" border="0" alt="Firefall"></a>
+						</td>
+						<td valign="BOTTOM">
+							<a href="firefall.htm" onmouseover="firefall.src='firefall_on.gif'; return true"
+							   onmouseout="firefall.src='firefall_off.gif'; return true">
+								<img src="firefall_off-1.gif" name="firefall" border="0" alt="firefall"></a>
+						</td>
+					</tr>
+					<tr valign="TOP">
+						<td valign="BOTTOM" align="center">
+							<a href="theseus-2.htm" onmouseover="theseus.src='theseus_on.gif'; return true"
+							   onmouseout="theseus.src='theseus_off.gif'; return true">
+								<img src="theseus_off-1.gif" name="theseus" border="0" width="138" height="29"
+									 valign="bottom" alt="Theseus"></a>
+						</td>
 
-<td valign="TOP" align="center">
-<a href="vampires-2.htm" onmouseover="vampires.src='vampires_on.gif'; return true" onmouseout="vampires.src='vampires_off.gif'; return true">
-    <img src="vampires_off-1.gif" name="vampires" border="0" alt="vampires"></a>
-</td><td valign="TOP" align="center">
-<a href="caulfield-1.htm" onmouseover="bc.src='bc_on.gif'; return true" onmouseout="bc.src='bc_off.gif'; return true">
-    <img src="bc_off-1.gif" name="bc" border="0" alt="Burns-Caulfield"></a>
-</td>
-<!-- <img SRC="blackstrip.gif"> -->
+						<td valign="TOP" align="center">
+							<a href="vampires-2.htm" onmouseover="vampires.src='vampires_on.gif'; return true"
+							   onmouseout="vampires.src='vampires_off.gif'; return true">
+								<img src="vampires_off-1.gif" name="vampires" border="0" alt="vampires"></a>
+						</td>
+						<td valign="TOP" align="center">
+							<a href="caulfield-1.htm" onmouseover="bc.src='bc_on.gif'; return true"
+							   onmouseout="bc.src='bc_off.gif'; return true">
+								<img src="bc_off-1.gif" name="bc" border="0" alt="Burns-Caulfield"></a>
+						</td>
+						<!-- <img SRC="blackstrip.gif"> -->
 
-</tr></table></td></tr></table>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
 
 </div>
 
 <div style="position:absolute; margin-top:115px; margin-left:20px;width=130px; height:400px; z-index:5; border:4">
 
-			<a class="top" href="#" onmouseover="reset.src='reset_on.jpg'; return true" onmouseout="reset.src='reset_off.jpg'; return true" onclick="LoadBio('本页面上的文字记录摘自2092年6月5日到2101年2月2日期间，史汀森无线电宏阵列拦截到的一系列信号片段。它似乎是<i>忒修斯</i>的综观者席瑞·基顿撰写的，作为对船员进行心理评估的一部分。他们提到了<i>忒修斯</i>的五名主要船员中的四名成员和一名后备船员。这表明，在这些记录产生的时候，至少有一人在任务中阵亡，不过由于信号的采集过于零散，目前还无法得出明确的结论。<br><br><b>注意</b>：尽管持续性的心理评估是综观者在深空任务中的基本元素，但迄今为止获得的片段在措辞和内容上都极为反常规。单从表面来看，这意味着任务的状况已是命途多舛。然而，由于无法假定基顿依然具有基本的理智，这些情报的可靠性无法确认。','<b>点击图片以获取个人资料片段</b>');return true">
-			<img src="reset_off-1.jpg" border="0" alt="reset" name="reset"></a>
-		<br>
+	<a class="top" href="#" onmouseover="reset.src='reset_on.jpg'; return true"
+	   onmouseout="reset.src='reset_off.jpg'; return true"
+	   onclick="LoadBio('本页面上的文字记录摘自2092年6月5日到2101年2月2日期间，史汀森无线电宏阵列拦截到的一系列信号片段。它似乎是<i>忒修斯</i>的综观者席瑞·基顿撰写的，作为对船员进行心理评估的一部分。他们提到了<i>忒修斯</i>的五名主要船员中的四名成员和一名后备船员。这表明，在这些记录产生的时候，至少有一人在任务中阵亡，不过由于信号的采集过于零散，目前还无法得出明确的结论。<br><br><b>注意</b>：尽管持续性的心理评估是综观者在深空任务中的基本元素，但迄今为止获得的片段在措辞和内容上都极为反常规。单从表面来看，这意味着任务的状况已是命途多舛。然而，由于无法假定基顿依然具有基本的理智，这些情报的可靠性无法确认。','<b>点击图片以获取个人资料片段</b>');return true">
+		<img src="reset_off-1.jpg" border="0" alt="reset" name="reset"></a>
+	<br>
 
 
-			<a class="top" href="#" onmouseover="Bates.src='bates_on.jpg'; return true" onmouseout="Bates.src='bates_off.jpg'; return true" onclick="LoadBio('想象你是阿曼达·贝茨。<br><br>你对自己的部队有绝对的控制力，这力量能让从前的将军们梦遗，同时也能让他们噩梦连连。你可以在转瞬间进入任何下属的感觉中枢，从任何士兵的视角亲历战场。你的每一个手下都誓死效忠于你，从不质疑你的决定，欣然遵从你所有的命令。它们对你的忠诚是血肉之躯根本无法想象的。你不是指挥链上的一环，你是<i>整个</i>指挥链条。<br><br>你有些害怕自己的力量。你有些害怕自己用这力量所做的那些事情。<br><br>对于你来说，服从命令与下达命令都是你的天性。哦，有时你也会质疑某项政策，或者为了大局稍微越界。你在<i>指挥中的主动性</i>早已成为传奇，但对于上级的直接命令你从未违抗。上级征询你的意见时，你总是直言不讳、毫不掩饰——直到他们做出决定，下达命令，然后你就会依令行事，绝不迟疑。哪怕真有疑问，你也不会问东问西浪费时间，除非你指望能得到一个对任务有所帮助的答案。<br><br>那么，你为什么要求<i>吸血鬼</i>向你解释分析的细节？<br><br>不是为了获取信息。这就好像指望视力正常的人向天生失明的人解释什么是视觉。也不是为了进一步澄清情况：萨拉斯第提出的最低要求并无丝毫含混之处。你甚至不是为了帮席瑞·基顿一把，怕那个可怜的笨蛋错过了什么关键点，又不好意思自己举手提问。<br><br>不，你追问这些细节，原因只有一个：为了<i>挑战</i>。为了反抗，命令下达之后对抗的空间已经微乎其微，但你仍然想要将它充分地利用起来。<br><br>当萨拉斯第要求所有人各抒己见时，你采取了最强硬的态度，与他争论，向他呼吁。但他无视你的意见，他完全不肯尝试与对方沟通，反而命令先发制人，入侵外星人的领地。他早知道<i>罗夏</i>或许有生物居住，却仍然将它炸出一条口子，全不顾它们的死活。他杀死的也许是无辜的平民。他也许激怒了一个巨人。你不知道。<br><br>你只知道自己做了他的帮凶。	<br><br>过去你曾在自己的同胞中见过同样的傲慢。吸血鬼比人类更聪明，你原指望他们会更有智慧。你曾眼看着这样傲慢的愚蠢伤害无助的人类，这已经够糟了；但如今事关地球的命运，如此愚蠢的行为简直教人无法忍受。滥杀无辜还只是<i>最微不足道</i>的部分；你们以世界的命运作赌注，挑衅一个漫游于恒星间的技术文明，而对方唯一的错处就是未经许可拍了一张相片。<br><br>你的反对没有起到任何作用。所以你把它控制住，只偶尔提个毫无意义、不可能得到回答的问题。包含在这问题中的反抗隐藏得那样深，连你自己都不曾察觉。即便你察觉了，你也完全没有流露——因为你绝不想提醒萨拉斯第，你认为他<i>错</i>了。你不希望他想起这件事。你不希望他觉得你在打着什么算盘。<br><br>因为事实正是如此。哪怕你还没有准备好向自己承认。<br><br>阿曼达·贝茨正在考虑夺取指挥权。<br><br>','<b>阿曼达·贝茨（曼曼）</b><br>军事顾问');return true">
-			<img src="bates_off-1.jpg" border="0" alt="Bates" name="Bates"></a>
-		<br>
-			<a class="top" href="#" onmouseover="James.src='james_on.jpg'; return true" onmouseout="James.src='james_off.jpg'; return true" onclick="LoadBio('“在进化过程中，我们大部分时间可能都是处于分裂状态。”她敲敲自己的太阳穴，“这里头空间大得很；现代人的大脑可以同时容纳好几打核心意识，一点不会觉得挤。再说平行的多任务系统显然更具生存优势。”<br><br>我点点头，“十个脑袋总比一个强。”<br><br>“整合成一个人格，这很可能是最近才发生的。有些专家认为，只要条件适宜，我们仍然可以恢复到多重人格状态。”<br><br>“嗯，那当然。你就是活生生的例子。”<br><br>她摇摇它们的脑袋，“我指的不是<i>物理上</i>的分割。我们代表了最前沿的技术，这毫无疑问，但理论上手术并非必不可少。压力也能达到类似的效果，如果压力够大的话而且发生在幼年期。”<br><br>“当真？”<br><br>“嗯，理论上讲是这样。”詹姆斯承认。接着萨沙出场了，“理论个<i>狗屁</i>。记录在案的例子多的是，直到五十年前都有。”<br><br>“真的吗？”我抑制住使用嵌入设备查找注解的冲动；散焦的眼睛会暴露我的所作所为，“我一直不知道。”<br><br>“哼，<i>现在</i>谁也不提这事了。过去对待多核心的态度真他妈<i>野蛮</i>——管它叫<i>人格分裂症</i>，就好像它是什么疾病。他们想出来的治疗方案就是留下其中一个核心，把其他的通通杀掉。当然他们并不管那叫<i>谋杀</i>。他们管那叫<i>整合</i>之类的狗屁名字。过去人类就是这么干的：创造出其他人格，让他们把所有的痛苦和虐待都承担下来，等不再需要这些人了，就把他们搞掉。”<br><br>那时我们正在参加所谓的破冰派对，这可不是大家喜闻乐见的调调。于是詹姆斯滑回到驾驶席，对话渐渐回到了大众接受的方向。<br><br>但无论在当时还是那之后，我都从没听四人合体用<i>替代人格</i>来形容彼此。斯宾德说话时似乎并无恶意，我不明白他们的反应怎么会如此剧烈。现在正好可以弄清楚——我飘在自己的营帐里，离行动开始还有几分钟，而且也没人会发现我的眼睛散了焦。<br><br>感控中心告诉我，<i>替代人格</i>几个字带着一个世纪的精神包袱。萨沙说得没错，多核心一度被称为多重人格分裂症，人们将其视为<i>疾病</i>，<i>从来不会</i>主动诱发它。当时的专家认为，多重人格源自难以想象的残酷虐待——分裂出的人格献出自己，以承担所有的侵犯和打骂，而背后的另一人格则躲进大脑皮层某个无法探知的庇护所里。这既是生存策略也是自我牺牲的仪式：无助而绝望的灵魂把自己分成碎片，将颤抖的血肉奉献给<i>圣母</i>或者<i>圣父</i>，希望这些恶毒的神祇终会有餍足的一天。<br><br>后来人们发现这些全是无稽之谈。或者至少从未得到证实。那时候的所谓专家不比巫医强，成天只会根据随兴编造的仪式手舞足蹈：包括花样百出、漫无边际的交谈，充满了诱导性的问题和非语言的暗示，以及反复回溯童年的经历，试图寻找早巳消逝的一切。等发现自己的念珠和拨浪鼓不起作用，也许再附送一剂碳酸锂或者氟哌丁苯和古老的占星术究竟哪个更正确。一句话，竭尽全力把自己伪装成科学家的模样。<br><br>不用说，最后科学反把他们全部变成了绊脚石；即便在突触神经重构技术出现之前，“多重人格障碍症”也已是明日黄花。但“替代人格”是那个时代遗留下来的语言，它的影响一直没有消失。对于记得这故事的人，“<i>替代人格</i>”无异于<i>背叛</i>与<i>献牲</i>的代名词。“<i>替代人格</i>”就等于<i>炮灰</i>。<br><br>我想象着四人合体的灵魂如何共存，想象着它们呈现出怎样的生物形态结构，我明白了萨沙为什么会如此激烈，明白了苏珊为什么放任她这样做。毕竟这个概念本身并没有什么不合理的地方，四人合体的存在已经证明了这一点。然而当人家将你从一个业已存在的主体上剥离，当人家从虚无中将你雕刻出来，你发现自己仅仅是一个人格的片段，一出生就已经成年，甚至没有一具时刻属于自己的身体——这时候如果你感到愤怒，这在很大程度上都是可以原谅的。没错，你们彼此平等，你们共同进退。没错，没有哪个人格比别的人格更强。但说到底，拥有姓氏的仍然只有苏珊。<br><br>最好还是把过去的恩怨当做出气筒，无论这恩怨是否真实存在；这样更简单些，总好过与共同分享身体的人闹矛盾。<br><br>脚下的怪兽仍在不断成长，无数图像、数据将我包围。此时我不但明白了萨沙为何反感那个字眼，还明白了艾萨克·斯宾德为什么偏偏选了它——尽管在他这显然只是一个无意识的举动。<br><br>对于地球来说，<i>忒修斯</i>上的每个人都是替代品。<br><br>','<b>苏珊·詹姆斯（通称“四人合体”）</b><br>语言学家，多重人格者');return true">
-			<img src="james_off-1.jpg" border="0" alt="James" name="James"></a>
-		
-		<br>
-			<a class="top" href="#" onmouseover="Cunningham.src='cunningham_on.jpg'; return true" onmouseout="Cunningham.src='cunningham_off.jpg'; return true" onclick="LoadBio('坎宁汉不喜欢<i>被人玩弄</i>。<br><br>没人喜欢。但大多数人并不这样看待我的行为。他们闭上嘴巴，却被身体出卖了心思，可他们对此毫不知情。他们说话是因为想要吐露心声；他们不说话时，就以为自己在保守秘密。我密切地关注他们，我的每一个字都是为他们量身打造，这样他们就不会有任何系统感到自己受了利用——但不知为什么，这招对罗伯特·坎宁汉行不通。<br><br>我想我选错了系统模型。<br><br>想象你是个综观者。你通过系统的表征研究其行为，你通过它们在<i>表面上</i>的投射来推断掩藏在<i>表面之下</i>的机械体系。这就是你成功的秘诀：你通过理解容纳系统的边界去认识系统本身。<br><br>现在想象你遇上了一个人，他在这些界线上撕开一个洞，制造出一个流血的伤口。<br><br>罗伯特·坎宁汉的肉体无法容纳他。肉体不过是个麻袋，他的职责要求他超越肉体；在奥尔特云这边，他的生物形态结构遍布整艘飞船。当然，从某种意义上讲我们所有人都是如此。贝茨和她的机器步兵，萨拉斯第和他的脑边缘链接——就连我们大脑中与感控中心相连的嵌入设备也会使我们稍微<i>弥散</i>，让我们略略超出自己身体的限制。但贝茨只控制她的步兵，她从不<i>栖息</i>其中。四人合体用一块主板运行多个系统，但每一个都有其独特的生物形态结构，再说它们也从来不会同时出现。至于萨拉斯第——<br><br>好吧，萨拉斯第完全是另外一码事，但这是后话了。<br><br>坎宁汉不仅仅操作自己的遥测装置，他<i>逃</i>进它们内部，把它们变成自己的秘密身份，以隐藏那个脆弱的基准人类。他牺牲了新皮层的一半，作为交换，他能看见x光、尝出细胞膜中的各种形态；他割裂了一具身体，使自己能够短暂寄居于别的身体中。他的许多部分藏在攀爬者笼子周围，藏在那些传感装置和操作器里；之前我一直没能想明白这一点，否则我很可能会在生化／医疗副舱的每一件仪器中发现至关重要的线索。和其他人一样，坎宁汉也是一张生物形态结构拼图，只不过其中一半都藏在机器里。我得到的模型并不完整。<br><br>我不认为这是他所希冀的状态。现在回想起来，我能在他的每一个表征上读出刺目的自我厌恶。然而在21世纪的后半段，他想象不出自己还有什么别的选择，除非他愿意一辈子当一条寄生虫。坎宁汉不过是两害相权取其轻罢了。<br><br>现在就连这也被剥夺了。萨拉斯第的命令割掉了他的感觉器官。他再也不能<i>感受</i>到数据，只能一步一步地<i>阐释</i>；他的工具变成了屏幕和图表，而它们只会将感知压缩为单调、空洞的速记法。这是一个因多处截肢而饱受创伤的系统。这个系统被切掉了眼睛、耳朵和舌头，曾经<i>水乳交融</i>的一切，如今它只能跌跌撞撞地摸索。突然之间，所有的藏身之处悉数消失，被罗伯特·坎宁汉抛撒在各处的碎片别无选择，只能回到他体内，让我终于可以把它们看个明白。<br><br>这从头至尾都是我的错。我将全副精力都用在构建其他系统的模型上，独独忘记了做这份工作的那个系统，忘记了我自己。糟糕的视力只不过是影响图像清晰度的原因之一：错误的小前提同样会让人眼花缭乱。单只想象我是罗伯特·坎宁汉还不够。	<br><br>我还必须想象我是席瑞·基顿。<br><br>','<b>罗伯特·坎宁汉</b><br>舰上的外科医生，地外生物学家');return true">
-			<img src="cunningham_off-1.jpg" border="0" alt="Cunningham" name="Cunningham"></a>
-		
-		<br>
-			
-			<a class="top" href="#" onmouseover="Keeton.src='keeton_on.jpg'; return true" onmouseout="Keeton.src='keeton_off.jpg'; return true" onclick="LoadBio('所以，我也没法告诉你事情的真相究竟如何。	<br><br>你只能想象自己是席瑞·基顿。','席瑞·基顿<br><b>综观者</b>');return true">
-			<img src="keeton_off-1.jpg" border="0" alt="Keeton" name="Keeton"></a>
-		
-		<br>
-			
-			<a class="top" href="#" onmouseover="Sarasti.src='sarasti_on.jpg'; return true" onmouseout="Sarasti.src='sarasti_off.jpg'; return true" onclick="LoadBio('萨拉斯第，你个吸血怪物。<br><br>  你这狠毒的混蛋。你个丑陋肮脏的虐待狂。你将我撕裂，你吓得我屁滚尿流，害我哭哭啼啼，活像被开膛破肚的婴儿，你把我剥了个精光，你这<i>狗娘养的</i>，你个潜伏在黑暗里的鬼祟东西，你把我的工具砸得稀烂，你夺走了能帮我与<i>别人</i>接触的一切，而你<i>根本没有必要</i>这样做你个猪猡，完全没有必要，可你早知道这一点不是吗？你只是想耍弄我。我见过你的同类，猫耍弄老鼠，捉捉放放，让对方尝到点自由的味道，然后再次出击，撕咬，但不致命——至少暂时如此——然后你把它们放开。现在它们一瘸一拐，也许折了一条腿，或者肚皮上撕开了一条口子，但它们还在<i>垂死挣扎</i>，在跑、在爬，拖着自己残破的身体，拼尽全力，直到你<i>再次</i>出击，然后<i>又一次</i>，因为你拿这当<i>乐子</i>，因为它能叫你<i>高兴</i>，你这狗娘养的虐待狂。你把我们送到那东西怀里，让它也耍弄我们，也许你们根本就是一伙的，因为它也任我逃了，就像你一样，它让我逃向你的怀抱，然后由你剥下我的一切武装，把我变成一只无助的<i>野兽</i>，赤身露体，只剩下半边大脑，我没法再轮转、没法再改变，我甚至没法同你<i>交谈</i>——<br><br>你这个——<br><br>这甚至不是什么私人恩怨，对吧？你甚至并不恨我。你只不过是厌倦了忍耐，周围有这么多鲜肉，你不愿再<i>压抑</i>自己，而其他人都不可或缺，除了我。这才是我<i>真正的</i>工作，对吧？不是综观者，不是管道，甚至不是炮灰或者诱饵。<br><br>我只是你磨爪子的工具，用后即可抛弃。<br><br>','<b>朱卡·萨拉斯第</b><br>任务的副指挥官');return true">
-			<img src="sarasti_off-1.jpg" border="0" alt="Sarasti" name="Sarasti"></a>
+	<a class="top" href="#" onmouseover="Bates.src='bates_on.jpg'; return true"
+	   onmouseout="Bates.src='bates_off.jpg'; return true"
+	   onclick="LoadBio('想象你是阿曼达·贝茨。<br><br>你对自己的部队有绝对的控制力，这力量能让从前的将军们梦遗，同时也能让他们噩梦连连。你可以在转瞬间进入任何下属的感觉中枢，从任何士兵的视角亲历战场。你的每一个手下都誓死效忠于你，从不质疑你的决定，欣然遵从你所有的命令。它们对你的忠诚是血肉之躯根本无法想象的。你不是指挥链上的一环，你是<i>整个</i>指挥链条。<br><br>你有些害怕自己的力量。你有些害怕自己用这力量所做的那些事情。<br><br>对于你来说，服从命令与下达命令都是你的天性。哦，有时你也会质疑某项政策，或者为了大局稍微越界。你在<i>指挥中的主动性</i>早已成为传奇，但对于上级的直接命令你从未违抗。上级征询你的意见时，你总是直言不讳、毫不掩饰——直到他们做出决定，下达命令，然后你就会依令行事，绝不迟疑。哪怕真有疑问，你也不会问东问西浪费时间，除非你指望能得到一个对任务有所帮助的答案。<br><br>那么，你为什么要求<i>吸血鬼</i>向你解释分析的细节？<br><br>不是为了获取信息。这就好像指望视力正常的人向天生失明的人解释什么是视觉。也不是为了进一步澄清情况：萨拉斯第提出的最低要求并无丝毫含混之处。你甚至不是为了帮席瑞·基顿一把，怕那个可怜的笨蛋错过了什么关键点，又不好意思自己举手提问。<br><br>不，你追问这些细节，原因只有一个：为了<i>挑战</i>。为了反抗，命令下达之后对抗的空间已经微乎其微，但你仍然想要将它充分地利用起来。<br><br>当萨拉斯第要求所有人各抒己见时，你采取了最强硬的态度，与他争论，向他呼吁。但他无视你的意见，他完全不肯尝试与对方沟通，反而命令先发制人，入侵外星人的领地。他早知道<i>罗夏</i>或许有生物居住，却仍然将它炸出一条口子，全不顾它们的死活。他杀死的也许是无辜的平民。他也许激怒了一个巨人。你不知道。<br><br>你只知道自己做了他的帮凶。	<br><br>过去你曾在自己的同胞中见过同样的傲慢。吸血鬼比人类更聪明，你原指望他们会更有智慧。你曾眼看着这样傲慢的愚蠢伤害无助的人类，这已经够糟了；但如今事关地球的命运，如此愚蠢的行为简直教人无法忍受。滥杀无辜还只是<i>最微不足道</i>的部分；你们以世界的命运作赌注，挑衅一个漫游于恒星间的技术文明，而对方唯一的错处就是未经许可拍了一张相片。<br><br>你的反对没有起到任何作用。所以你把它控制住，只偶尔提个毫无意义、不可能得到回答的问题。包含在这问题中的反抗隐藏得那样深，连你自己都不曾察觉。即便你察觉了，你也完全没有流露——因为你绝不想提醒萨拉斯第，你认为他<i>错</i>了。你不希望他想起这件事。你不希望他觉得你在打着什么算盘。<br><br>因为事实正是如此。哪怕你还没有准备好向自己承认。<br><br>阿曼达·贝茨正在考虑夺取指挥权。<br><br>','<b>阿曼达·贝茨（曼曼）</b><br>军事顾问');return true">
+		<img src="bates_off-1.jpg" border="0" alt="Bates" name="Bates"></a>
+	<br>
+	<a class="top" href="#" onmouseover="James.src='james_on.jpg'; return true"
+	   onmouseout="James.src='james_off.jpg'; return true"
+	   onclick="LoadBio('“在进化过程中，我们大部分时间可能都是处于分裂状态。”她敲敲自己的太阳穴，“这里头空间大得很；现代人的大脑可以同时容纳好几打核心意识，一点不会觉得挤。再说平行的多任务系统显然更具生存优势。”<br><br>我点点头，“十个脑袋总比一个强。”<br><br>“整合成一个人格，这很可能是最近才发生的。有些专家认为，只要条件适宜，我们仍然可以恢复到多重人格状态。”<br><br>“嗯，那当然。你就是活生生的例子。”<br><br>她摇摇它们的脑袋，“我指的不是<i>物理上</i>的分割。我们代表了最前沿的技术，这毫无疑问，但理论上手术并非必不可少。压力也能达到类似的效果，如果压力够大的话而且发生在幼年期。”<br><br>“当真？”<br><br>“嗯，理论上讲是这样。”詹姆斯承认。接着萨沙出场了，“理论个<i>狗屁</i>。记录在案的例子多的是，直到五十年前都有。”<br><br>“真的吗？”我抑制住使用嵌入设备查找注解的冲动；散焦的眼睛会暴露我的所作所为，“我一直不知道。”<br><br>“哼，<i>现在</i>谁也不提这事了。过去对待多核心的态度真他妈<i>野蛮</i>——管它叫<i>人格分裂症</i>，就好像它是什么疾病。他们想出来的治疗方案就是留下其中一个核心，把其他的通通杀掉。当然他们并不管那叫<i>谋杀</i>。他们管那叫<i>整合</i>之类的狗屁名字。过去人类就是这么干的：创造出其他人格，让他们把所有的痛苦和虐待都承担下来，等不再需要这些人了，就把他们搞掉。”<br><br>那时我们正在参加所谓的破冰派对，这可不是大家喜闻乐见的调调。于是詹姆斯滑回到驾驶席，对话渐渐回到了大众接受的方向。<br><br>但无论在当时还是那之后，我都从没听四人合体用<i>替代人格</i>来形容彼此。斯宾德说话时似乎并无恶意，我不明白他们的反应怎么会如此剧烈。现在正好可以弄清楚——我飘在自己的营帐里，离行动开始还有几分钟，而且也没人会发现我的眼睛散了焦。<br><br>感控中心告诉我，<i>替代人格</i>几个字带着一个世纪的精神包袱。萨沙说得没错，多核心一度被称为多重人格分裂症，人们将其视为<i>疾病</i>，<i>从来不会</i>主动诱发它。当时的专家认为，多重人格源自难以想象的残酷虐待——分裂出的人格献出自己，以承担所有的侵犯和打骂，而背后的另一人格则躲进大脑皮层某个无法探知的庇护所里。这既是生存策略也是自我牺牲的仪式：无助而绝望的灵魂把自己分成碎片，将颤抖的血肉奉献给<i>圣母</i>或者<i>圣父</i>，希望这些恶毒的神祇终会有餍足的一天。<br><br>后来人们发现这些全是无稽之谈。或者至少从未得到证实。那时候的所谓专家不比巫医强，成天只会根据随兴编造的仪式手舞足蹈：包括花样百出、漫无边际的交谈，充满了诱导性的问题和非语言的暗示，以及反复回溯童年的经历，试图寻找早巳消逝的一切。等发现自己的念珠和拨浪鼓不起作用，也许再附送一剂碳酸锂或者氟哌丁苯和古老的占星术究竟哪个更正确。一句话，竭尽全力把自己伪装成科学家的模样。<br><br>不用说，最后科学反把他们全部变成了绊脚石；即便在突触神经重构技术出现之前，“多重人格障碍症”也已是明日黄花。但“替代人格”是那个时代遗留下来的语言，它的影响一直没有消失。对于记得这故事的人，“<i>替代人格</i>”无异于<i>背叛</i>与<i>献牲</i>的代名词。“<i>替代人格</i>”就等于<i>炮灰</i>。<br><br>我想象着四人合体的灵魂如何共存，想象着它们呈现出怎样的生物形态结构，我明白了萨沙为什么会如此激烈，明白了苏珊为什么放任她这样做。毕竟这个概念本身并没有什么不合理的地方，四人合体的存在已经证明了这一点。然而当人家将你从一个业已存在的主体上剥离，当人家从虚无中将你雕刻出来，你发现自己仅仅是一个人格的片段，一出生就已经成年，甚至没有一具时刻属于自己的身体——这时候如果你感到愤怒，这在很大程度上都是可以原谅的。没错，你们彼此平等，你们共同进退。没错，没有哪个人格比别的人格更强。但说到底，拥有姓氏的仍然只有苏珊。<br><br>最好还是把过去的恩怨当做出气筒，无论这恩怨是否真实存在；这样更简单些，总好过与共同分享身体的人闹矛盾。<br><br>脚下的怪兽仍在不断成长，无数图像、数据将我包围。此时我不但明白了萨沙为何反感那个字眼，还明白了艾萨克·斯宾德为什么偏偏选了它——尽管在他这显然只是一个无意识的举动。<br><br>对于地球来说，<i>忒修斯</i>上的每个人都是替代品。<br><br>','<b>苏珊·詹姆斯（通称“四人合体”）</b><br>语言学家，多重人格者');return true">
+		<img src="james_off-1.jpg" border="0" alt="James" name="James"></a>
+
+	<br>
+	<a class="top" href="#" onmouseover="Cunningham.src='cunningham_on.jpg'; return true"
+	   onmouseout="Cunningham.src='cunningham_off.jpg'; return true"
+	   onclick="LoadBio('坎宁汉不喜欢<i>被人玩弄</i>。<br><br>没人喜欢。但大多数人并不这样看待我的行为。他们闭上嘴巴，却被身体出卖了心思，可他们对此毫不知情。他们说话是因为想要吐露心声；他们不说话时，就以为自己在保守秘密。我密切地关注他们，我的每一个字都是为他们量身打造，这样他们就不会有任何系统感到自己受了利用——但不知为什么，这招对罗伯特·坎宁汉行不通。<br><br>我想我选错了系统模型。<br><br>想象你是个综观者。你通过系统的表征研究其行为，你通过它们在<i>表面上</i>的投射来推断掩藏在<i>表面之下</i>的机械体系。这就是你成功的秘诀：你通过理解容纳系统的边界去认识系统本身。<br><br>现在想象你遇上了一个人，他在这些界线上撕开一个洞，制造出一个流血的伤口。<br><br>罗伯特·坎宁汉的肉体无法容纳他。肉体不过是个麻袋，他的职责要求他超越肉体；在奥尔特云这边，他的生物形态结构遍布整艘飞船。当然，从某种意义上讲我们所有人都是如此。贝茨和她的机器步兵，萨拉斯第和他的脑边缘链接——就连我们大脑中与感控中心相连的嵌入设备也会使我们稍微<i>弥散</i>，让我们略略超出自己身体的限制。但贝茨只控制她的步兵，她从不<i>栖息</i>其中。四人合体用一块主板运行多个系统，但每一个都有其独特的生物形态结构，再说它们也从来不会同时出现。至于萨拉斯第——<br><br>好吧，萨拉斯第完全是另外一码事，但这是后话了。<br><br>坎宁汉不仅仅操作自己的遥测装置，他<i>逃</i>进它们内部，把它们变成自己的秘密身份，以隐藏那个脆弱的基准人类。他牺牲了新皮层的一半，作为交换，他能看见x光、尝出细胞膜中的各种形态；他割裂了一具身体，使自己能够短暂寄居于别的身体中。他的许多部分藏在攀爬者笼子周围，藏在那些传感装置和操作器里；之前我一直没能想明白这一点，否则我很可能会在生化／医疗副舱的每一件仪器中发现至关重要的线索。和其他人一样，坎宁汉也是一张生物形态结构拼图，只不过其中一半都藏在机器里。我得到的模型并不完整。<br><br>我不认为这是他所希冀的状态。现在回想起来，我能在他的每一个表征上读出刺目的自我厌恶。然而在21世纪的后半段，他想象不出自己还有什么别的选择，除非他愿意一辈子当一条寄生虫。坎宁汉不过是两害相权取其轻罢了。<br><br>现在就连这也被剥夺了。萨拉斯第的命令割掉了他的感觉器官。他再也不能<i>感受</i>到数据，只能一步一步地<i>阐释</i>；他的工具变成了屏幕和图表，而它们只会将感知压缩为单调、空洞的速记法。这是一个因多处截肢而饱受创伤的系统。这个系统被切掉了眼睛、耳朵和舌头，曾经<i>水乳交融</i>的一切，如今它只能跌跌撞撞地摸索。突然之间，所有的藏身之处悉数消失，被罗伯特·坎宁汉抛撒在各处的碎片别无选择，只能回到他体内，让我终于可以把它们看个明白。<br><br>这从头至尾都是我的错。我将全副精力都用在构建其他系统的模型上，独独忘记了做这份工作的那个系统，忘记了我自己。糟糕的视力只不过是影响图像清晰度的原因之一：错误的小前提同样会让人眼花缭乱。单只想象我是罗伯特·坎宁汉还不够。	<br><br>我还必须想象我是席瑞·基顿。<br><br>','<b>罗伯特·坎宁汉</b><br>舰上的外科医生，地外生物学家');return true">
+		<img src="cunningham_off-1.jpg" border="0" alt="Cunningham" name="Cunningham"></a>
+
+	<br>
+
+	<a class="top" href="#" onmouseover="Keeton.src='keeton_on.jpg'; return true"
+	   onmouseout="Keeton.src='keeton_off.jpg'; return true"
+	   onclick="LoadBio('所以，我也没法告诉你事情的真相究竟如何。	<br><br>你只能想象自己是席瑞·基顿。','席瑞·基顿<br><b>综观者</b>');return true">
+		<img src="keeton_off-1.jpg" border="0" alt="Keeton" name="Keeton"></a>
+
+	<br>
+
+	<a class="top" href="#" onmouseover="Sarasti.src='sarasti_on.jpg'; return true"
+	   onmouseout="Sarasti.src='sarasti_off.jpg'; return true"
+	   onclick="LoadBio('萨拉斯第，你个吸血怪物。<br><br>  你这狠毒的混蛋。你个丑陋肮脏的虐待狂。你将我撕裂，你吓得我屁滚尿流，害我哭哭啼啼，活像被开膛破肚的婴儿，你把我剥了个精光，你这<i>狗娘养的</i>，你个潜伏在黑暗里的鬼祟东西，你把我的工具砸得稀烂，你夺走了能帮我与<i>别人</i>接触的一切，而你<i>根本没有必要</i>这样做你个猪猡，完全没有必要，可你早知道这一点不是吗？你只是想耍弄我。我见过你的同类，猫耍弄老鼠，捉捉放放，让对方尝到点自由的味道，然后再次出击，撕咬，但不致命——至少暂时如此——然后你把它们放开。现在它们一瘸一拐，也许折了一条腿，或者肚皮上撕开了一条口子，但它们还在<i>垂死挣扎</i>，在跑、在爬，拖着自己残破的身体，拼尽全力，直到你<i>再次</i>出击，然后<i>又一次</i>，因为你拿这当<i>乐子</i>，因为它能叫你<i>高兴</i>，你这狗娘养的虐待狂。你把我们送到那东西怀里，让它也耍弄我们，也许你们根本就是一伙的，因为它也任我逃了，就像你一样，它让我逃向你的怀抱，然后由你剥下我的一切武装，把我变成一只无助的<i>野兽</i>，赤身露体，只剩下半边大脑，我没法再轮转、没法再改变，我甚至没法同你<i>交谈</i>——<br><br>你这个——<br><br>这甚至不是什么私人恩怨，对吧？你甚至并不恨我。你只不过是厌倦了忍耐，周围有这么多鲜肉，你不愿再<i>压抑</i>自己，而其他人都不可或缺，除了我。这才是我<i>真正的</i>工作，对吧？不是综观者，不是管道，甚至不是炮灰或者诱饵。<br><br>我只是你磨爪子的工具，用后即可抛弃。<br><br>','<b>朱卡·萨拉斯第</b><br>任务的副指挥官');return true">
+		<img src="sarasti_off-1.jpg" border="0" alt="Sarasti" name="Sarasti"></a>
 
 
 </div>
 
 <div class="content">
-<br>
-<h1 style="color:#FFFF00; text-align:center">船员个人资料（传言）</h1>
+	<br>
+	<h1 style="color:#FFFF00; text-align:center">船员个人资料（真实性存疑）</h1>
 
-<table id="biography" align="center" border="0" cellpadding="20" valign="top" summary="" width="100%">
+	<table id="biography" align="center" border="0" cellpadding="20" valign="top" summary="" width="100%">
 
-	<tr align="center">
-		<td align="center" valign="top" width="105"></td>	
-		<td valign="CENTER">
-			<div id="header"><b>点击图片以获取个人资料片段</b></div>
-		</td>
-		<td width="10"></td></tr>
-		<tr><td>
-		</td><td style="background-color:silver">
-			<div id="profile" style="font-family: Times,Arial,helvetica; font-size: 10pt; background:transparent; color:#000000; text-align:justify;">
-			
-				本页面上的文字记录摘自2092年6月5日到2101年2月2日期间，史汀森无线电宏阵列拦截到的一系列信号片段。它似乎是<i>忒修斯</i>的综观者席瑞·基顿撰写的，作为对船员进行心理评估的一部分。其中提到了<i>忒修斯</i>的五名主要船员中的四名成员和一名后备船员。这表明，在这些记录产生的时候，至少有一人在任务中阵亡，不过由于信号的采集过于零散，目前还无法得出明确的结论。<br><br><b>注意</b>：尽管持续性的心理评估是综观者在深空任务中的基本元素，但迄今为止获得的片段在措辞和内容上都极为反常规。单从表面来看，这意味着任务的状况已是命途多舛。然而，由于无法假定基顿依然具有基本的理智，这些情报的可靠性无法确认。
- 
-			
-			
-			</div><br><br>
-		</td><td width="10"></td></tr>
-		<tr><td colspan="3">&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br></td></tr></table>
-		
+		<tr align="center">
+			<td align="center" valign="top" width="105"></td>
+			<td valign="CENTER">
+				<div id="header"><b>点击图片以获取个人资料片段</b></div>
+			</td>
+			<td width="10"></td>
+		</tr>
+		<tr>
+			<td>
+			</td>
+			<td style="background-color:silver">
+				<div id="profile"
+					 style="font-family: Times,Arial,helvetica; font-size: 10pt; background:transparent; color:#000000; text-align:justify;">
+
+					本页面上的文字记录摘自2092年6月5日到2101年2月2日期间，史汀森无线电宏阵列拦截到的一系列信号片段。它似乎是<i>忒修斯</i>的综观者席瑞·基顿撰写的，作为对船员进行心理评估的一部分。其中提到了<i>忒修斯</i>的五名主要船员中的四名成员和一名后备船员。这表明，在这些记录产生的时候，至少有一人在任务中阵亡，不过由于信号的采集过于零散，目前还无法得出明确的结论。<br><br><b>注意</b>：尽管持续性的心理评估是综观者在深空任务中的基本元素，但迄今为止获得的片段在措辞和内容上都极为反常规。单从表面来看，这意味着任务的状况已是命途多舛。然而，由于无法假定基顿依然具有基本的理智，这些情报的可靠性无法确认。
+
+
+				</div>
+				<br><br>
+			</td>
+			<td width="10"></td>
+		</tr>
+		<tr>
+			<td colspan="3">&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br></td>
+		</tr>
+	</table>
+
 
 </div>
 
@@ -149,8 +181,8 @@ y.innerHTML=hdr
 <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
 </script>
 <script type="text/javascript">
-_uacct = "UA-1714026-1";
-urchinTracker();
+	_uacct = "UA-1714026-1";
+	urchinTracker();
 </script>
 </body>
 </html>
