@@ -1,0 +1,61 @@
+.novels {
+    display: flex;
+    justify-content: center;
+}
+.sidebar {
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sidebar3 {
+    display: flex;
+    justify-content: center;
+}
+
+.book-preview .introduction{
+
+}
+
+.novel p {
+    font-size: 1em;
+    /*line-height: 2em;*/
+}
+.novels .novel.rifters {
+    flex: 0 1 5%;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*padding: 5% 0 5%;*/
+    /*padding-top: 50px;*/
+    /*padding-left: 50px;*/
+    /*margin: 0 8% 0;*/
+}
+
+.novels .novel.firefall {
+    flex: 0 1 9%;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*padding: 5% 0 5%;*/
+    /*padding-top: 50px;*/
+    /*padding-left: 50px;*/
+    /*margin: 0 8% 0;*/
+}
+
+.sidebar .singlelist{
+    /*display: flex;*/
+    /*justify-content: center;*/
+    flex:0 1 auto;
+}
+
+.sidebar .list{
+    flex:0 1 50%;
+}
+
+.singlelist .list{
+    flex:0 1 50%;
+}
